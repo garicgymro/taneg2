@@ -1,0 +1,20 @@
+name: Sync to GitLab
+
+on:
+  push:
+    branches:
+      - '**'   # triggers on push to any branch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # fetch full history, not just latest commit
+
+      - name: Push to GitLab
+        run: |
+          git remote add gitlab https://GarethRoberts:${{ secrets.GITLAB_TOKEN }}@gitlab.pavlovia.org/GarethRoberts/taneg
+          git push gitlab --all --force
+          git push gitlab --tags --force
