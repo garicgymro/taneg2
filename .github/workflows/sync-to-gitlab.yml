@@ -14,6 +14,8 @@ jobs:
           fetch-depth: 0   # fetch full history, not just latest commit
 
       - name: Push to GitLab
+        env:
+          GIT_TRACE: 1
         run: |
           git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.pavlovia.org/GarethRoberts/taneg2
           git push gitlab --all --force
