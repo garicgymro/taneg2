@@ -61,11 +61,37 @@
   // -----------------
   // Preload images
   // -----------------
+  // var preload = {
+  //   type: jsPsychPreload,
+  //   images: ['img/GoodUmbrella.png', 'img/BadSandwich.png', 'img/Book.png', 'img/SmallBook.png', 'img/BigBook.png', 'img/BadWeather.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png', 'img/Umbrella.png', 'img/Weather.png', 'img/GoodWeather.png', 'img/Man.png', 'img/HasBadSandwich.png', 'img/GoodSandwich.png', 'img/BadUmbrella.png', 'img/BadBook.png', 'img/Woman.png', 'img/Sandwich.png', 'img/GoodBook.png', 'img/SmallSandwich.png', 'img/BigSandwich.png', 'img/landscape.jpg','img/HasGoodBook.png', 'img/HasBadUmbrella.png', 'img/HasGoodSandwich.png','img/HasBadBook.png','img/HasGoodUmbrella.png']
+  // };
+
+
   var preload = {
-    type: jsPsychPreload,
-    images: ['img/GoodUmbrella.png', 'img/BadSandwich.png', 'img/Book.png', 'img/SmallBook.png', 'img/BigBook.png', 'img/BadWeather.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png', 'img/Umbrella.png', 'img/Weather.png', 'img/GoodWeather.png', 'img/Man.png', 'img/HasBadSandwich.png', 'img/GoodSandwich.png', 'img/BadUmbrella.png', 'img/BadBook.png', 'img/Woman.png', 'img/Sandwich.png', 'img/GoodBook.png', 'img/SmallSandwich.png', 'img/BigSandwich.png', 'img/landscape.jpg','img/HasGoodBook.png', 'img/HasBadUmbrella.png', 'img/HasGoodSandwich.png','img/HasBadBook.png','img/HasGoodUmbrella.png']
-  };
+  type: jsPsychPreload,
+  images: [
+    'img/landscape.jpg',
+    'img/Book.png', 'img/Shoe.png', 'img/Sandwich.png', 'img/Man.png', 'img/Umbrella.png', 'img/Woman.png',
+    'img/BigSandwich.png', 'img/SmallSandwich.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png',
+    'img/BigBook.png', 'img/SmallBook.png', 'img/GoodUmbrella.png', 'img/BadUmbrella.png',
+    'img/GoodBook.png', 'img/BadBook.png', 'img/GoodSandwich.png', 'img/BadSandwich.png',
+    'img/GoodShoe.png', 'img/BadShoe.png', 'img/BigShoe.png', 'img/SmallShoe.png',
+    'img/GoodSandwich2.png', 'img/Umbrella2.png', 'img/Book2.png', 'img/GoodShoe2.png',
+    'img/BigSandwich2.png', 'img/SmallSandwich2.png', 'img/BigUmbrella2.png', 'img/SmallUmbrella2.png',
+    'img/BigBook2.png', 'img/SmallBook2.png', 'img/GoodUmbrella2.png', 'img/BadUmbrella2.png',
+    'img/GoodBook2.png', 'img/BadBook2.png', 'img/BadSandwich2.png',
+    'img/BadShoe2.png', 'img/BigShoe2.png', 'img/SmallShoe2.png',
+    'img/GoodSandwich4.png', 'img/Umbrella4.png', 'img/Book4.png', 'img/Shoe4.png',
+    'img/BigSandwich4.png', 'img/SmallSandwich4.png', 'img/BigUmbrella4.png', 'img/SmallUmbrella4.png',
+    'img/BigBook4.png', 'img/SmallBook4.png', 'img/GoodUmbrella4.png', 'img/BadUmbrella4.png',
+    'img/GoodBook4.png', 'img/BadBook4.png', 'img/BadSandwich4.png',
+    'img/GoodShoe4.png', 'img/BadShoe4.png', 'img/BigShoe4.png', 'img/SmallShoe4.png'
+  ]
+};
+
   timeline.push(preload);
+
+
 
   // -----------------
   // Welcome + instructions
@@ -433,12 +459,12 @@ jsPsych.data.addProperties({
   // Shared stimuli array
   // -----------------
   var noun_stimuli = [
-    { image: "img/Book.png",  word: "pag", type: "noun" },
+    { image: "img/Book.png",  word: "parg", type: "noun" },
     { image: "img/Sandwich.png", word: "teban", type: "noun"  },
     { image: "img/Man.png", word: "kiv", type: "noun"  },
     { image: "img/Umbrella.png", word: "pilg", type: "noun"  },
     { image: "img/Woman.png", word: "kers", type: "noun"  },
-    { image: "img/Weather.png", word: "tobel", type: "noun"  }
+    { image: "img/Shoe.png", word: "tobel", type: "noun"  }
   ];
 
 
@@ -449,32 +475,96 @@ jsPsych.data.addProperties({
     { image: "img/SmallUmbrella.png", word: "kas", type: "adjective" },
     { image: "img/BigBook.png",  word: "pir", type: "adjective" },
     { image: "img/SmallBook.png", word: "kas", type: "adjective" },
+    { image: "img/BigShoe.png", word: "pir", type: "adjective" },
+    { image: "img/SmallShoe.png", word: "kas", type: "adjective" },
     { image: "img/GoodUmbrella.png", word: "tan", type: "adjective" },
     { image: "img/BadUmbrella.png", word: "turu", type: "adjective" },
     { image: "img/GoodBook.png", word: "tan", type: "adjective" },
     { image: "img/BadBook.png", word: "turu", type: "adjective" },
     { image: "img/GoodSandwich.png", word: "tan", type: "adjective" },
-    { image: "img/BadSandwich.png", word: "turu", type: "adjective" }
+    { image: "img/BadSandwich.png", word: "turu", type: "adjective" },
+    { image: "img/GoodShoe.png", word: "tan", type: "adjective" },
+    { image: "img/BadShoe.png", word: "turu", type: "adjective" },
   ];
 
 
 
 
-  var noun_phrase_stimuli = [
-    { image: "img/BigSandwich.png",  word: "teban bir" },
-    { image: "img/SmallSandwich.png", word: "teban gas" },
-    { image: "img/BigUmbrella.png",  word: "pilg bir" },
-    { image: "img/SmallUmbrella.png", word: "pilg gas" },
-    { image: "img/BigBook.png",  word: "pag pir" },
-    { image: "img/SmallBook.png", word: "pag kas" },
-    { image: "img/GoodUmbrella.png", word: "pilg dan" },
-    { image: "img/BadUmbrella.png", word: "pilg duru" },
-    { image: "img/GoodBook.png", word: "pag tan" },
-    { image: "img/BadBook.png", word: "pag turu" },
-    { image: "img/GoodSandwich.png", word: "teban dan" },
-    { image: "img/BadSandwich.png", word: "teban duru" },
-    { image: "img/GoodWeather.png", word: "tobel tan" },
-    { image: "img/BadWeather.png", word: "tobel turu" }
+var noun_phrase_stimuli = [
+    { image: "img/BigSandwich.png",  word: "teban bir", type: "noun phrase" },
+    { image: "img/SmallSandwich.png", word: "teban gas", type: "noun phrase" },
+    { image: "img/BigUmbrella.png",  word: "pilg bir", type: "noun phrase" },
+    { image: "img/SmallUmbrella.png", word: "pilg gas", type: "noun phrase" },
+    { image: "img/BigBook.png",  word: "parg pir", type: "noun phrase" },
+    { image: "img/SmallBook.png", word: "parg kas", type: "noun phrase" },
+    { image: "img/GoodUmbrella.png", word: "pilg dan", type: "noun phrase" },
+    { image: "img/BadUmbrella.png", word: "pilg duru", type: "noun phrase" },
+    { image: "img/GoodBook.png", word: "parg tan", type: "noun phrase" },
+    { image: "img/BadBook.png", word: "parg turu", type: "noun phrase" },
+    { image: "img/GoodSandwich.png", word: "teban dan", type: "noun phrase" },
+    { image: "img/BadSandwich.png", word: "teban duru", type: "noun phrase" },
+    { image: "img/GoodShoe.png", word: "tobel tan", type: "noun phrase" },
+    { image: "img/BadShoe.png", word: "tobel turu", type: "noun phrase" },
+    { image: "img/BigShoe.png", word: "tobel pir", type: "noun phrase" },
+    { image: "img/SmallShoe.png", word: "tobel kas", type: "noun phrase" }
+  ];
+
+
+
+  var two_noun_stimuli = [
+    { image: "img/GoodSandwich2.png",  word: "dew debanu" },
+    { image: "img/Umbrella2.png",  word: "dew bilgu" },
+    { image: "img/Book2.png",  word: "dew bargu" },
+    { image: "img/GoodShoe2.png", word: "dew dobelu" },
+  ];
+
+
+  var four_noun_stimuli = [
+    { image: "img/GoodSandwich4.png",  word: "kra thebanu" },
+    { image: "img/GoodUmbrella4.png",  word: "kra philgu" },
+    { image: "img/Book4.png",  word: "kra phargu" },
+    { image: "img/GoodShoe4.png", word: "kra thobelu" },
+  ];
+
+
+
+
+var two_adjective_stimuli = [
+    { image: "img/BigSandwich2.png",  word: "dew debanu bir", type: "number phrase" },
+    { image: "img/SmallSandwich2.png", word: "dew debanu gas", type: "number phrase" },
+    { image: "img/BigUmbrella2.png",  word: "dew bilgu bir", type: "number phrase" },
+    { image: "img/SmallUmbrella2.png", word: "dew bilgu gas", type: "number phrase" },
+    { image: "img/BigBook2.png",  word: "dew bargu pir", type: "number phrase" },
+    { image: "img/SmallBook2.png", word: "dew bargu kas", type: "number phrase" },
+    { image: "img/GoodUmbrella2.png", word: "dew bilgu dan", type: "number phrase" },
+    { image: "img/BadUmbrella2.png", word: "dew bilgu duru", type: "number phrase" },
+    { image: "img/GoodBook2.png", word: "dew bargu tan", type: "number phrase" },
+    { image: "img/BadBook2.png", word: "dew bargu turu", type: "number phrase" },
+    { image: "img/GoodSandwich2.png", word: "dew debanu dan", type: "number phrase" },
+    { image: "img/BadSandwich2.png", word: "dew debanu duru", type: "number phrase" },
+    { image: "img/GoodShoe2.png", word: "dew dobelu tan", type: "number phrase" },
+    { image: "img/BadShoe2.png", word: "dew dobelu turu", type: "number phrase" },
+    { image: "img/BigShoe2.png", word: "dew dobelu pir", type: "number phrase" },
+    { image: "img/SmallShoe2.png", word: "dew dobelu kas", type: "number phrase" }
+  ];
+
+var four_adjective_stimuli = [
+    { image: "img/BigSandwich4.png",  word: "kra thebanu bir", type: "number phrase" },
+    { image: "img/SmallSandwich4.png", word: "kra thebanu gas", type: "number phrase" },
+    { image: "img/BigUmbrella4.png",  word: "kra philgu bir", type: "number phrase" },
+    { image: "img/SmallUmbrella4.png", word: "kra philgu gas", type: "number phrase" },
+    { image: "img/BigBook4.png",  word: "kra phargu pir", type: "number phrase" },
+    { image: "img/SmallBook4.png", word: "kra phargu kas", type: "number phrase" },
+    { image: "img/GoodUmbrella4.png", word: "kra philgu dan", type: "number phrase" },
+    { image: "img/BadUmbrella4.png", word: "kra philgu duru", type: "number phrase" },
+    { image: "img/GoodBook4.png", word: "kra phargu tan", type: "number phrase" },
+    { image: "img/BadBook4.png", word: "kra phargu turu", type: "number phrase" },
+    { image: "img/GoodSandwich4.png", word: "kra thebanu dan", type: "number phrase" },
+    { image: "img/BadSandwich4.png", word: "kra thebanu duru", type: "number phrase" },
+    { image: "img/GoodShoe4.png", word: "kra thobelu tan", type: "number phrase" },
+    { image: "img/BadShoe4.png", word: "kra thobelu turu", type: "number phrase" },
+    { image: "img/BigShoe4.png", word: "kra thobelu pir", type: "number phrase" },
+    { image: "img/SmallShoe4.png", word: "kra thobelu kas", type: "number phrase" }
   ];
 
 
@@ -491,33 +581,49 @@ var word_stimuli = [
 ];
 
 
-  var sentence_stimuli1 = [
-    { image: "img/GoodBook.png",  word: "Ba ni pag o dan", type: "sentence" },
-    { image: "img/BadBook.png", word: "Ba ni pag o duru", type: "sentence" },
-    { image: "img/GoodWeather.png",  word: "Ba ni tobel o dan", type: "sentence" },
-    { image: "img/GoodUmbrella.png",  word: "Ba ni bilg o dan", type: "sentence" },
-    { image: "img/BadUmbrella.png", word: "Ba ni bilg o duru", type: "sentence" },
-    { image: "img/BadSandwich.png", word: "Ba ni deban o duru", type: "sentence" },
-    { image: "img/HasGoodBook.png",  word: "Ba dub ni gers bag tan", type: "sentence"  },
-    { image: "img/HasBadUmbrella.png", word: "Ba dub ni kiv bilg duru", type: "sentence"  },
-    { image: "img/HasGoodSandwich.png",  word: "Ba dub ni gers deban dan", type: "sentence"  },
-    { image: "img/HasBadSandwich.png", word: "Ba dub ni kiv deban duru", type: "sentence"  }
 
+var number_stimuli = [
+  ...two_adjective_stimuli,
+  ...four_adjective_stimuli,
+  // ...determiner_stimuli
+];
+
+
+
+  var production_stimuli = [
+    { image: "img/SmallShoe4.png", word: "kra thobelu kas", type: "phrase for production"  },
+    { image: "img/BigBook4.png",  word: "kra phargu pir", type: "phrase for production"  },
   ];
 
 
-  var sentence_stimuli2 = [
-    { image: "img/HasBadBook.png", word: "Ba dub ni gers bag turu", type: "sentence"  },
-    { image: "img/HasGoodUmbrella.png",  word: "Ba dub ni kiv bilg dan", type: "sentence"  },
-    { image: "img/GoodSandwich.png",  word: "Ba ni deban o dan", type: "sentence" },
-    { image: "img/BadWeather.png", word: "Ba ni tobel o duru", type: "sentence" },
-    { image: "img/HasGoodBook.png",  word: "Ba dub ni gers bag tan", type: "sentence"  },
-    { image: "img/HasBadUmbrella.png", word: "Ba dub ni kiv bilg duru", type: "sentence"  },
-    { image: "img/GoodBook.png",  word: "Ba ni pag o dan", type: "sentence" },
-    { image: "img/BadBook.png", word: "Ba ni pag o duru", type: "sentence" },
-    { image: "img/GoodWeather.png",  word: "Ba ni tobel o dan", type: "sentence" },
-    { image: "img/HasBadSandwich.png", word: "Ba dub ni kiv deban duru", type: "sentence"  }
-  ];
+
+  // var sentence_stimuli1 = [
+  //   { image: "img/GoodBook.png",  word: "Ba ni parg o dan", type: "sentence" },
+  //   { image: "img/BadBook.png", word: "Ba ni parg o duru", type: "sentence" },
+  //   { image: "img/GoodWeather.png",  word: "Ba ni tobel o dan", type: "sentence" },
+  //   { image: "img/GoodUmbrella.png",  word: "Ba ni bilg o dan", type: "sentence" },
+  //   { image: "img/BadUmbrella.png", word: "Ba ni bilg o duru", type: "sentence" },
+  //   { image: "img/BadSandwich.png", word: "Ba ni deban o duru", type: "sentence" },
+  //   { image: "img/HasGoodBook.png",  word: "Ba dub ni gers bag tan", type: "sentence"  },
+  //   { image: "img/HasBadUmbrella.png", word: "Ba dub ni kiv bilg duru", type: "sentence"  },
+  //   { image: "img/HasGoodSandwich.png",  word: "Ba dub ni gers deban dan", type: "sentence"  },
+  //   { image: "img/HasBadSandwich.png", word: "Ba dub ni kiv deban duru", type: "sentence"  }
+
+  // ];
+
+
+  // var sentence_stimuli2 = [
+  //   { image: "img/HasBadBook.png", word: "Ba dub ni gers barg turu", type: "sentence"  },
+  //   { image: "img/HasGoodUmbrella.png",  word: "Ba dub ni kiv bilg dan", type: "sentence"  },
+  //   { image: "img/GoodSandwich.png",  word: "Ba ni deban o dan", type: "sentence" },
+  //   { image: "img/BadWeather.png", word: "Ba ni tobel o duru", type: "sentence" },
+  //   { image: "img/HasGoodBook.png",  word: "Ba dub ni gers barg tan", type: "sentence"  },
+  //   { image: "img/HasBadUmbrella.png", word: "Ba dub ni kiv bilg duru", type: "sentence"  },
+  //   { image: "img/GoodBook.png",  word: "Ba ni parg o dan", type: "sentence" },
+  //   { image: "img/BadBook.png", word: "Ba ni parg o duru", type: "sentence" },
+  //   { image: "img/GoodWeather.png",  word: "Ba ni tobel o dan", type: "sentence" },
+  //   { image: "img/HasBadSandwich.png", word: "Ba dub ni kiv deban duru", type: "sentence"  }
+  // ];
 
 
 
@@ -599,56 +705,56 @@ trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
 
 
 
-var sentence_exposure = {
-  type: jsPsychImageKeyboardResponse,
-  data: { task: 'sentence_exposure' },
-  stimulus: jsPsych.timelineVariable('image'),
-  stimulus_width: 400,
-  maintain_aspect_ratio: true,
-  prompt: function(){
-    return `<p style="font-size:30px;">${jsPsych.timelineVariable('word')}</p>`;
-  },
-  choices: "NO_KEYS",
-  response_ends_trial: false,
-  trial_duration: 10000,
-  post_trial_gap: 500,
+// var sentence_exposure = {
+//   type: jsPsychImageKeyboardResponse,
+//   data: { task: 'sentence_exposure' },
+//   stimulus: jsPsych.timelineVariable('image'),
+//   stimulus_width: 400,
+//   maintain_aspect_ratio: true,
+//   prompt: function(){
+//     return `<p style="font-size:30px;">${jsPsych.timelineVariable('word')}</p>`;
+//   },
+//   choices: "NO_KEYS",
+//   response_ends_trial: false,
+//   trial_duration: 10000,
+//   post_trial_gap: 500,
 
-  on_start: function(trial) {
-    trial._allow_listener_timeout = setTimeout(function() {
-      var listener_registered_at = performance.now();
+//   on_start: function(trial) {
+//     trial._allow_listener_timeout = setTimeout(function() {
+//       var listener_registered_at = performance.now();
 
-trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
-      callback_function: function(info) {
-        var press_time = performance.now();
-        // Ignore if the press arrived before the listener opened
-        if ((press_time - listener_registered_at) < 5000) {
-          trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
-            callback_function: function(info2) {
-              jsPsych.finishTrial({ rt: info2.rt, key_press: info2.key });
-            },
-            valid_responses: [' '],
-            rt_method: 'performance',
-            persist: false
-          });
-          return;
-        }
-        jsPsych.finishTrial({ rt: info.rt, key_press: info.key });
-      },
-      valid_responses: [' '],
-      rt_method: 'performance',
-      persist: false
-    });
-  }, 5000);
-},
+// trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
+//       callback_function: function(info) {
+//         var press_time = performance.now();
+//         // Ignore if the press arrived before the listener opened
+//         if ((press_time - listener_registered_at) < 5000) {
+//           trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
+//             callback_function: function(info2) {
+//               jsPsych.finishTrial({ rt: info2.rt, key_press: info2.key });
+//             },
+//             valid_responses: [' '],
+//             rt_method: 'performance',
+//             persist: false
+//           });
+//           return;
+//         }
+//         jsPsych.finishTrial({ rt: info.rt, key_press: info.key });
+//       },
+//       valid_responses: [' '],
+//       rt_method: 'performance',
+//       persist: false
+//     });
+//   }, 5000);
+// },
 
-  on_finish: function(data) {
-    if (data.rt !== null && data.rt !== undefined) {
-      data.rt_valid = data.rt >= 5000;
-    } else {
-      data.rt_valid = false;
-    }
-  }
-};
+//   on_finish: function(data) {
+//     if (data.rt !== null && data.rt !== undefined) {
+//       data.rt_valid = data.rt >= 5000;
+//     } else {
+//       data.rt_valid = false;
+//     }
+//   }
+// };
 
 
 
@@ -841,49 +947,49 @@ var last_sentence_correct = true;
 var current_sentence_choices = null;  
 
 
-var sentence_selection = {
-  type: jsPsychImageButtonResponse,
-  data: { task: 'sentence_selection' },
-  stimulus: jsPsych.timelineVariable('image'),
-  stimulus_width: 400,
-  maintain_aspect_ratio: true,
+// var sentence_selection = {
+//   type: jsPsychImageButtonResponse,
+//   data: { task: 'sentence_selection' },
+//   stimulus: jsPsych.timelineVariable('image'),
+//   stimulus_width: 400,
+//   maintain_aspect_ratio: true,
 
   
 
-choices: function() {
-  if (current_sentence_choices === null) {
-    var correctWord = jsPsych.timelineVariable('word');
-    var correctType = jsPsych.timelineVariable('type');
-    var foils = sentence_stimuli1.filter(s => s.type === correctType && s.word !== correctWord);
-    var foil = foils[Math.floor(Math.random() * foils.length)].word;
-    current_sentence_choices = jsPsych.randomization.shuffle([correctWord, foil]);
-  }
-  window._last_sentence_selection_choices = current_sentence_choices;
-  return current_sentence_choices;
-},
+// choices: function() {
+//   if (current_sentence_choices === null) {
+//     var correctWord = jsPsych.timelineVariable('word');
+//     var correctType = jsPsych.timelineVariable('type');
+//     var foils = sentence_stimuli1.filter(s => s.type === correctType && s.word !== correctWord);
+//     var foil = foils[Math.floor(Math.random() * foils.length)].word;
+//     current_sentence_choices = jsPsych.randomization.shuffle([correctWord, foil]);
+//   }
+//   window._last_sentence_selection_choices = current_sentence_choices;
+//   return current_sentence_choices;
+// },
 
-  button_html: '<button class="jspsych-btn" ' +
-             'style="font-size:32px; padding:10px 20px; margin: 0 15px;">%choice%</button>',
+//   button_html: '<button class="jspsych-btn" ' +
+//              'style="font-size:32px; padding:10px 20px; margin: 0 15px;">%choice%</button>',
 
-  data: {
-    task: 'sentence_selection',
-    correct_response: jsPsych.timelineVariable('word')
-  },
-  post_trial_gap: 500,
+//   data: {
+//     task: 'sentence_selection',
+//     correct_response: jsPsych.timelineVariable('word')
+//   },
+//   post_trial_gap: 500,
 
-on_finish: function(data) {
-  var labels = window._last_sentence_selection_choices;
-  data.foil = labels.find(w => w !== data.correct_response); // useful to log
-  data.response_label = labels[data.response];
-  data.correct = jsPsych.pluginAPI.compareKeys(
-    data.response_label, data.correct_response
-  );
-    last_sentence_correct = data.correct;
-    if (data.correct) {
-      current_sentence_choices = null;  // reset so next stimulus gets fresh choices
-  }
-}
-};
+// on_finish: function(data) {
+//   var labels = window._last_sentence_selection_choices;
+//   data.foil = labels.find(w => w !== data.correct_response); // useful to log
+//   data.response_label = labels[data.response];
+//   data.correct = jsPsych.pluginAPI.compareKeys(
+//     data.response_label, data.correct_response
+//   );
+//     last_sentence_correct = data.correct;
+//     if (data.correct) {
+//       current_sentence_choices = null;  // reset so next stimulus gets fresh choices
+//   }
+// }
+// };
 
 
 // var sentence_selection = {
@@ -942,23 +1048,34 @@ on_finish: function(data) {
 var adjective_exposure_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
-      <p style="font-size:24px;">Now it's time to learn some adjectives...<p>
-       <p style="font-size:24px;">Look at the image in each case and try to learn the word that goes with it.<p>
+      <p style="font-size:24px;">Now it's time to learn some adjectives...</p>
+       <p style="font-size:24px;">Look at the image in each case and try to learn the word that goes with it.</p>
 
     `,
     post_trial_gap: 1000
   };
 
 
-  var sentence_exposure_instructions = {
+
+  var number_exposure_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
-      <p style="font-size:24px;">Let's try learning some full sentences!</p>
-      <p style="font-size:20px;">Do your best in each case to figure out the meaning of the sentence and how the language works.</p>
+      <p style="font-size:24px;">Now let's see how the numbers 2 and 4 work in Taneg...</p>
 
     `,
     post_trial_gap: 1000
   };
+
+
+  // var sentence_exposure_instructions = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <p style="font-size:24px;">Let's try learning some full sentences!</p>
+  //     <p style="font-size:20px;">Do your best in each case to figure out the meaning of the sentence and how the language works.</p>
+
+  //   `,
+  //   post_trial_gap: 1000
+  // };
 
 
 var adjective_exposure_block = {
@@ -967,6 +1084,47 @@ var adjective_exposure_block = {
     randomize_order: true,
     repetitions: 1
   };
+
+
+
+
+
+var noun_phrase_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: noun_phrase_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
+
+
+
+
+var two_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: two_noun_stimuli,
+    randomize_order: true,
+    repetitions: 2
+  };
+
+
+var four_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: four_noun_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
+
+
+
+
+var number_noun_phrase_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: number_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
+
+
 
 
 
@@ -1022,6 +1180,115 @@ var noun_selection_loop_block = {
 };
 
 
+var last_noun_phrase_correct = true;
+var current_noun_phrase_choices = null;
+
+var noun_phrase_selection = {
+  type: jsPsychImageButtonResponse,
+  data: { task: 'noun_phrase_selection' },
+  stimulus: jsPsych.timelineVariable('image'),
+  stimulus_width: 400,
+  maintain_aspect_ratio: true,
+
+  choices: function() {
+    if (current_noun_phrase_choices === null) {
+      var correctWord = jsPsych.timelineVariable('word');
+      var foils = noun_phrase_stimuli.filter(s => s.word !== correctWord);
+      var foil = foils[Math.floor(Math.random() * foils.length)].word;
+      current_noun_phrase_choices = jsPsych.randomization.shuffle([correctWord, foil]);
+    }
+    window._last_noun_phrase_selection_choices = current_noun_phrase_choices;
+    return current_noun_phrase_choices;
+  },
+
+  button_html: '<button class="jspsych-btn" ' +
+             'style="font-size:32px; padding:10px 20px; margin: 0 15px;">%choice%</button>',
+
+  data: {
+    task: 'noun_phrase_selection',
+    correct_response: jsPsych.timelineVariable('word')
+  },
+  post_trial_gap: 500,
+
+  on_finish: function(data) {
+    var labels = window._last_noun_phrase_selection_choices;
+    data.foil = labels.find(w => w !== data.correct_response);
+    data.response_label = labels[data.response];
+    data.correct = jsPsych.pluginAPI.compareKeys(
+      data.response_label, data.correct_response
+    );
+    last_noun_phrase_correct = data.correct;
+    if (data.correct) {
+      current_noun_phrase_choices = null;
+    }
+  }
+};
+
+var noun_phrase_selection_loop_block = {
+  timeline_variables: noun_phrase_stimuli,
+  randomize_order: true,
+  timeline: [{
+    loop_function: function(){ return !last_noun_phrase_correct; },
+    timeline: [noun_phrase_selection, feedback]
+  }]
+};
+
+
+
+var last_number_correct = true;
+var current_number_choices = null;
+
+var number_selection = {
+  type: jsPsychImageButtonResponse,
+  data: { task: 'number_selection' },
+  stimulus: jsPsych.timelineVariable('image'),
+  stimulus_width: 400,
+  maintain_aspect_ratio: true,
+
+  choices: function() {
+    if (current_number_choices === null) {
+      var correctWord = jsPsych.timelineVariable('word');
+      var foils = number_stimuli.filter(s => s.word !== correctWord);
+      var foil = foils[Math.floor(Math.random() * foils.length)].word;
+      current_number_choices = jsPsych.randomization.shuffle([correctWord, foil]);
+    }
+    window._last_number_selection_choices = current_number_choices;
+    return current_number_choices;
+  },
+
+  button_html: '<button class="jspsych-btn" ' +
+             'style="font-size:32px; padding:10px 20px; margin: 0 15px;">%choice%</button>',
+
+  data: {
+    task: 'number_selection',
+    correct_response: jsPsych.timelineVariable('word')
+  },
+  post_trial_gap: 500,
+
+  on_finish: function(data) {
+    var labels = window._last_number_selection_choices;
+    data.foil = labels.find(w => w !== data.correct_response);
+    data.response_label = labels[data.response];
+    data.correct = jsPsych.pluginAPI.compareKeys(
+      data.response_label, data.correct_response
+    );
+    last_number_correct = data.correct;
+    if (data.correct) {
+      current_number_choices = null;
+    }
+  }
+};
+
+var number_selection_loop_block = {
+  timeline_variables: number_stimuli,
+  randomize_order: true,
+  timeline: [{
+    loop_function: function(){ return !last_number_correct; },
+    timeline: [number_selection, feedback]
+  }]
+};
+
+
 // var word_selection_loop_block = {
 //   timeline: [{
 //     timeline: [word_selection, feedback],
@@ -1067,27 +1334,27 @@ var image_selection_loop_block = {
 
 
 
-  var sentence_exposure_block = {
-    timeline: [sentence_exposure],
-    timeline_variables: sentence_stimuli1,
-    randomize_order: true,
-    repetitions: 1
-  };
+  // var sentence_exposure_block = {
+  //   timeline: [sentence_exposure],
+  //   timeline_variables: sentence_stimuli1,
+  //   randomize_order: true,
+  //   repetitions: 1
+  // };
 
 
 
-var sentence_selection_loop_block = {
-  timeline_variables: sentence_stimuli1,
-  randomize_order: true,
-  timeline: [
-    {
-      loop_function: function(){
-        return !last_sentence_correct;  // ← read it here
-      },
-      timeline: [sentence_selection, feedback]
-    }
-  ]
-};
+// var sentence_selection_loop_block = {
+//   timeline_variables: sentence_stimuli1,
+//   randomize_order: true,
+//   timeline: [
+//     {
+//       loop_function: function(){
+//         return !last_sentence_correct;  // ← read it here
+//       },
+//       timeline: [sentence_selection, feedback]
+//     }
+//   ]
+// };
 
 
 
@@ -1170,7 +1437,7 @@ var sentence_selection_loop_block = {
   var production_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
-      <p style="font-size:20px;">Now you'll be asked to produce your own sentences in Taneg!</p>
+      <p style="font-size:20px;">Now you'll be asked to produce your own phrases in Taneg!</p>
       <p style="font-size:20px;">Please do your best to convey the meaning in each case, even if you're not sure.</p>
       <p style="font-size:20px;">You will not be corrected on this.</p>
       <p style="font-size:20px;">Imagine you're actually interacting with a real speaker! </p>
@@ -1181,9 +1448,9 @@ var sentence_selection_loop_block = {
 
 
 
-var sentence_production = {
+var taneg_production = {
   type: jsPsychSurveyText,
-  data: { task: 'sentence_production' },  
+  data: { task: 'production' },  
   preamble: function() {
     return `<img src="${jsPsych.timelineVariable('image')}" style="width:400px;">`;
   },
@@ -1205,9 +1472,9 @@ var sentence_production = {
 
 
 
-var sentence_production_block = {
-    timeline: [sentence_production],
-    timeline_variables: sentence_stimuli2,
+var production_block = {
+    timeline: [taneg_production],
+    timeline_variables: production_stimuli,
     randomize_order: true,
     repetitions: 2
   };
@@ -1228,13 +1495,15 @@ timeline.push(
   adjective_exposure_instructions,
   adjective_exposure_block,
   adjective_selection_loop_block,
-  sentence_exposure_instructions,
-  sentence_exposure_block,
   word_selection_loop_block,
-  sentence_exposure_block,
-  sentence_selection_loop_block,
+  noun_phrase_selection_loop_block,
+  number_exposure_instructions,
+  two_exposure_block,
+  four_exposure_block,
+  number_noun_phrase_exposure_block,
+  number_selection_loop_block,
   production_instructions,
-  sentence_production_block
+  production_block
   );
 
 
