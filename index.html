@@ -72,11 +72,12 @@
   images: [
     'img/landscape.jpg',
     'img/Book.png', 'img/Shoe.png', 'img/Sandwich.png', 'img/Man.png', 'img/Umbrella.png', 'img/Woman.png',
-    'img/BigSandwich.png', 'img/SmallSandwich.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png',
+    'img/BigSandwich.png', 'img/SmallSandwich.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png', 'img/BigMan.png', 'img/SmallMan.png', 'img/BigWoman.png', 'img/SmallWoman.png',
     'img/BigBook.png', 'img/SmallBook.png', 'img/GoodUmbrella.png', 'img/BadUmbrella.png',
     'img/GoodBook.png', 'img/BadBook.png', 'img/GoodSandwich.png', 'img/BadSandwich.png',
     'img/GoodShoe.png', 'img/BadShoe.png', 'img/BigShoe.png', 'img/SmallShoe.png',
     'img/GoodSandwich2.png', 'img/Umbrella2.png', 'img/Book2.png', 'img/GoodShoe2.png',
+    'img/Woman2.png','img/Man4.png','img/Man2.png','img/Woman4.png',
     'img/BigSandwich2.png', 'img/SmallSandwich2.png', 'img/BigUmbrella2.png', 'img/SmallUmbrella2.png',
     'img/BigBook2.png', 'img/SmallBook2.png', 'img/GoodUmbrella2.png', 'img/BadUmbrella2.png',
     'img/GoodBook2.png', 'img/BadBook2.png', 'img/BadSandwich2.png',
@@ -473,6 +474,10 @@ jsPsych.data.addProperties({
     { image: "img/SmallSandwich.png", word: "kas", type: "adjective" },
     { image: "img/BigUmbrella.png",  word: "pir", type: "adjective" },
     { image: "img/SmallUmbrella.png", word: "kas", type: "adjective" },
+    { image: "img/BigMan.png",  word: "pir", type: "adjective" },
+    { image: "img/SmallMan.png", word: "kas", type: "adjective" },
+    { image: "img/BigWoman.png",  word: "pir", type: "adjective" },
+    { image: "img/SmallWoman.png", word: "kas", type: "adjective" },
     { image: "img/BigBook.png",  word: "pir", type: "adjective" },
     { image: "img/SmallBook.png", word: "kas", type: "adjective" },
     { image: "img/BigShoe.png", word: "pir", type: "adjective" },
@@ -492,14 +497,18 @@ jsPsych.data.addProperties({
 
 var noun_phrase_stimuli = [
     { image: "img/BigSandwich.png",  word: "teban bir", type: "noun phrase" },
-    { image: "img/SmallSandwich.png", word: "teban gas", type: "noun phrase" },
-    { image: "img/BigUmbrella.png",  word: "pilg bir", type: "noun phrase" },
+    // { image: "img/SmallSandwich.png", word: "teban gas", type: "noun phrase" },
+    // { image: "img/BigUmbrella.png",  word: "pilg bir", type: "noun phrase" },
     { image: "img/SmallUmbrella.png", word: "pilg gas", type: "noun phrase" },
     { image: "img/BigBook.png",  word: "parg pir", type: "noun phrase" },
     { image: "img/SmallBook.png", word: "parg kas", type: "noun phrase" },
+    { image: "img/BigMan.png",  word: "kiv pir", type: "noun phrase" },
+    { image: "img/SmallMan.png", word: "kiv kas", type: "noun phrase" },
+    { image: "img/BigWoman.png",  word: "kers bir", type: "noun phrase" },
+    { image: "img/SmallWoman.png", word: "kers gas", type: "noun phrase" },
     { image: "img/GoodUmbrella.png", word: "pilg dan", type: "noun phrase" },
     { image: "img/BadUmbrella.png", word: "pilg duru", type: "noun phrase" },
-    { image: "img/GoodBook.png", word: "parg tan", type: "noun phrase" },
+    // { image: "img/GoodBook.png", word: "parg tan", type: "noun phrase" },
     { image: "img/BadBook.png", word: "parg turu", type: "noun phrase" },
     { image: "img/GoodSandwich.png", word: "teban dan", type: "noun phrase" },
     { image: "img/BadSandwich.png", word: "teban duru", type: "noun phrase" },
@@ -516,14 +525,18 @@ var noun_phrase_stimuli = [
     { image: "img/Umbrella2.png",  word: "dew bilgu" },
     { image: "img/Book2.png",  word: "dew bargu" },
     { image: "img/GoodShoe2.png", word: "dew dobelu" },
+    // { image: "img/Man2.png", word: "dew givu" },
+    { image: "img/Woman2.png", word: "dew gersu" },
   ];
 
 
   var four_noun_stimuli = [
-    { image: "img/GoodSandwich4.png",  word: "kra thebanu" },
-    { image: "img/GoodUmbrella4.png",  word: "kra philgu" },
-    { image: "img/Book4.png",  word: "kra phargu" },
-    { image: "img/GoodShoe4.png", word: "kra thobelu" },
+    { image: "img/GoodSandwich4.png",  word: "kra sebanu" },
+    { image: "img/GoodUmbrella4.png",  word: "kra filgu" },
+    { image: "img/Book4.png",  word: "kra fargu" },
+    { image: "img/GoodShoe4.png", word: "kra sobelu" },
+    { image: "img/Man4.png", word: "kra hivu" },
+    // { image: "img/Woman4.png", word: "kra hersu" },
   ];
 
 
@@ -549,22 +562,22 @@ var two_adjective_stimuli = [
   ];
 
 var four_adjective_stimuli = [
-    { image: "img/BigSandwich4.png",  word: "kra thebanu bir", type: "number phrase" },
-    { image: "img/SmallSandwich4.png", word: "kra thebanu gas", type: "number phrase" },
-    { image: "img/BigUmbrella4.png",  word: "kra philgu bir", type: "number phrase" },
-    { image: "img/SmallUmbrella4.png", word: "kra philgu gas", type: "number phrase" },
-    { image: "img/BigBook4.png",  word: "kra phargu pir", type: "number phrase" },
-    { image: "img/SmallBook4.png", word: "kra phargu kas", type: "number phrase" },
-    { image: "img/GoodUmbrella4.png", word: "kra philgu dan", type: "number phrase" },
-    { image: "img/BadUmbrella4.png", word: "kra philgu duru", type: "number phrase" },
-    { image: "img/GoodBook4.png", word: "kra phargu tan", type: "number phrase" },
-    { image: "img/BadBook4.png", word: "kra phargu turu", type: "number phrase" },
-    { image: "img/GoodSandwich4.png", word: "kra thebanu dan", type: "number phrase" },
-    { image: "img/BadSandwich4.png", word: "kra thebanu duru", type: "number phrase" },
-    { image: "img/GoodShoe4.png", word: "kra thobelu tan", type: "number phrase" },
-    { image: "img/BadShoe4.png", word: "kra thobelu turu", type: "number phrase" },
-    { image: "img/BigShoe4.png", word: "kra thobelu pir", type: "number phrase" },
-    { image: "img/SmallShoe4.png", word: "kra thobelu kas", type: "number phrase" }
+    { image: "img/BigSandwich4.png",  word: "kra sebanu bir", type: "number phrase" },
+    { image: "img/SmallSandwich4.png", word: "kra sebanu gas", type: "number phrase" },
+    { image: "img/BigUmbrella4.png",  word: "kra filgu bir", type: "number phrase" },
+    { image: "img/SmallUmbrella4.png", word: "kra filgu gas", type: "number phrase" },
+    { image: "img/BigBook4.png",  word: "kra fargu pir", type: "number phrase" },
+    { image: "img/SmallBook4.png", word: "kra fargu kas", type: "number phrase" },
+    { image: "img/GoodUmbrella4.png", word: "kra filgu dan", type: "number phrase" },
+    { image: "img/BadUmbrella4.png", word: "kra filgu duru", type: "number phrase" },
+    { image: "img/GoodBook4.png", word: "kra fargu tan", type: "number phrase" },
+    { image: "img/BadBook4.png", word: "kra fargu turu", type: "number phrase" },
+    { image: "img/GoodSandwich4.png", word: "kra sebanu dan", type: "number phrase" },
+    { image: "img/BadSandwich4.png", word: "kra sebanu duru", type: "number phrase" },
+    { image: "img/GoodShoe4.png", word: "kra sobelu tan", type: "number phrase" },
+    { image: "img/BadShoe4.png", word: "kra sobelu turu", type: "number phrase" },
+    { image: "img/BigShoe4.png", word: "kra sobelu pir", type: "number phrase" },
+    { image: "img/SmallShoe4.png", word: "kra sobelu kas", type: "number phrase" }
   ];
 
 
@@ -590,10 +603,20 @@ var number_stimuli = [
 
 
 
-  var production_stimuli = [
-    { image: "img/SmallShoe4.png", word: "kra thobelu kas", type: "phrase for production"  },
-    { image: "img/BigBook4.png",  word: "kra phargu pir", type: "phrase for production"  },
-  ];
+var production_stimuli = [
+  { image: "img/BigSandwich.png",   word: "teban bir",     type: "phrase for production" },
+  { image: "img/BadBook.png",       word: "parg turu",     type: "phrase for production" },
+  { image: "img/SmallShoe.png",     word: "tobel kas",     type: "phrase for production" },
+  { image: "img/GoodUmbrella2.png", word: "dew bilgu dan", type: "phrase for production" },
+  { image: "img/BigBook4.png",      word: "kra fargu pir", type: "phrase for production" },
+  { image: "img/SmallSandwich.png", word: "teban gas",     type: "phrase for production" },
+  { image: "img/GoodBook.png",      word: "parg tan",      type: "phrase for production" },
+  { image: "img/BigUmbrella.png",   word: "pilg bir",      type: "phrase for production" },
+  { image: "img/Man4.png",          word: "kra hivu",      type: "phrase for production" },
+  { image: "img/Man2.png",          word: "dew givu",      type: "phrase for production" },
+  { image: "img/Woman4.png",        word: "kra hersu",     type: "phrase for production" },
+  { image: "img/Woman2.png",        word: "dew gersu",     type: "phrase for production" },
+];
 
 
 
@@ -1496,6 +1519,7 @@ timeline.push(
   adjective_exposure_block,
   adjective_selection_loop_block,
   word_selection_loop_block,
+  noun_phrase_exposure_block,
   noun_phrase_selection_loop_block,
   number_exposure_instructions,
   two_exposure_block,
@@ -1620,7 +1644,7 @@ var followup_feedback_question = {
 
   questions: [
     {
-      prompt: "What do you think contributed to how engaged you felt?",
+      prompt: "If you switched your attention, what was the main reason for switching?",
       name: "feedback",
       rows: 3,
       columns: 50,
