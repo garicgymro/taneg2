@@ -520,9 +520,12 @@ var info_comprehension_loop = {
 var info_comprehension_confirmation = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function() {
-    var msg = `<p style="font-size:20px;">That's right! Taneg speakers are a minority who mostly also speak English.</p>`;
+    var msg = `<p style="font-size:20px;">That's right! Tany people all speak English, but 20% speak Taneg.</p>`;
     if (hasDrogek) {
-      msg += `<p style="font-size:20px;">And as a reminder, Drogek is now barely spoken at all.</p>`;
+      msg += `<p style="font-size:20px;">Drogek, by contrast, is now barely spoken at all.</p>`;
+    }
+    else {
+      msg += `<p style="font-size:20px;">This is better than for some other minority languages, which are barely spoken at all.</p>`;
     }
     msg += `<p style="font-size:20px;">Press any key to continue.</p>`;
     return msg;
