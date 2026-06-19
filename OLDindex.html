@@ -331,28 +331,110 @@
 
 
 
-  // -----------------
-  // Map each of the four conditions to its set of intro screens
-  // -----------------
-  function getConditionIntroBlocks(condition) {
-    switch (condition) {
-      case 'ImmersiveDrogek':
-        return [introImmersiveDrogek1, introImmersiveDrogek2, introImmersiveDrogek3, introImmersiveDrogek4];
-      case 'ImmersiveNoDrogek':
-        return [introImmersiveNoDrogek1, introImmersiveNoDrogek2, introImmersiveNoDrogek3, introImmersiveNoDrogek4];
-      case 'NonImmersiveDrogek':
-        return [introNonImmersiveDrogek1, introNonImmersiveDrogek2, introNonImmersiveDrogek3, introNonImmersiveDrogek4];
-      case 'NonImmersiveNoDrogek':
-        return [introNonImmersiveNoDrogek1, introNonImmersiveNoDrogek2, introNonImmersiveNoDrogek3, introNonImmersiveNoDrogek4];
-      default:
-        console.warn('Unrecognized condition for intro blocks:', condition);
-        return [introNonImmersiveNoDrogek1, introNonImmersiveNoDrogek2, introNonImmersiveNoDrogek3, introNonImmersiveNoDrogek4];
-    }
-  }
+  // var intro = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //   <p style="font-size:20px;">The purpose of this is to introduce you to a language.</p> 
+  //   <p style="font-size:20px;">Please do your best to learn it, please remain focused on this app, and please do not switch to other tabs!</p>
+  //   <p style="font-size:20px;">But please do <strong>not</strong> make notes! We want to see how well you do just by engaging with the app!</p>
+  //   <p style="font-size:20px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
 
-  var condition_intro_blocks = getConditionIntroBlocks(condition);
-  var hasDrogek = (condition === 'ImmersiveDrogek' || condition === 'NonImmersiveDrogek');
 
+
+  // var intro2 = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <p style="font-size:20px;">The name for the language (in the language itself) is <strong>Taneg</strong>.</p> 
+  //     <p style="font-size:20px;">In a moment we'll provide some information about Taneg. But first we'll check if you've understood so far...</p>
+  //     <p style="font-size:20px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+
+
+
+  // var TanegInfo1Neg = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <img src="img/landscape.jpg" style="width:400px;">
+  //     <p style="font-size:24px;">Taneg is an endangered language.</p> 
+
+  //     <p style="font-size:22px;">Its speakers number only in the thousands, and all speak at least one other language (mostly English).</p>
+
+  //     <p style="font-size:22px;">Only a subset of them use it daily.</p>
+
+  //     <p style="font-size:22px;">Without learners like you, its future is very uncertain!</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+  // var TanegInfo2Neg = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //   <img src="img/Book.png" style="width:400px;">
+   
+  //     <p style="font-size:22px;">There is a small amount of literature in Taneg, as well as some translations of books from other languages.</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+  // var TanegInfo3Neg = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <p style="font-size:24px;">By learning Taneg you can contribute to preserving a unique cultural artifact for another generation!</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+
+  // var TanegInfo1Pos = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <img src="img/landscape.jpg" style="width:400px;">
+  //     <p style="font-size:24px;">Taneg is a thriving minority language.</p>
+
+  //     <p style="font-size:22px;">It is spoken by thousands of people, all of whom are multilingual (and most speak English)!</p>
+
+  //     <p style="font-size:22px;">It is still the daily language for many.</p>
+
+  // <p style="font-size:22px;">Learners like you can be part of its future!</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+  // var TanegInfo2Pos = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <img src="img/Book.png" style="width:400px;"> 
+  //     <p style="font-size:22px;">There is also original literature in Taneg, as well as translations of books from other languages.</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
+
+
+
+  // var TanegInfo3Pos = {
+  //   type: jsPsychHtmlKeyboardResponse,
+  //   stimulus: `
+  //     <p style="font-size:24px;">By learning this language you can engage with a unique culture on its speakers' own terms!</p>
+  //     <p style="font-size:22px;">Press any key to continue.</p>
+  //     `,
+  //   post_trial_gap: 1000
+  // };
 
 
 
@@ -397,11 +479,8 @@ var comprehension_check1 = (function() {
 var comprehension_loop1_attempts = 0;
 
 
-// comprehension_loop1 shows the four condition-specific intro screens plus the
-// shared no-notes/no-tabs reminder, then checks comprehension of that reminder.
-// If the participant gets it wrong, all of it (intro screens + reminder) repeats.
 var comprehension_loop1 = {
-  timeline: condition_intro_blocks.concat([sharedIntro5, comprehension_check1]),
+  timeline: [intro, intro2, comprehension_check1],
   loop_function: function() {
     let last = jsPsych.data.get().filter({ task: 'comprehension_check' }).last(1).values()[0];
     if (!last.correct) {
@@ -428,31 +507,44 @@ var info_confirmation = {
 
 
 
-// makeInfoComprehension builds a true/false checklist about the background
-// information just given. The Taneg facts are the same across all four
-// conditions; the Drogek facts are only included (and only need to be true)
-// for the two Drogek conditions, since NoDrogek participants were never told
-// about Drogek at all.
+
+
 function makeInfoComprehension(condition) {
-  var hasDrogek = (condition === 'ImmersiveDrogek' || condition === 'NonImmersiveDrogek');
+  var questions, correctAnswers;
 
-  var tanegStatements = {
-    'Taneg speakers are a minority of the population': true,
-    'About 20% of the population speaks Taneg regularly': true,
-    'Everyone in the community also speaks English': true,
-    'Taneg is spoken by the majority of the population': false,
-    'No one who speaks Taneg also speaks English': false
-  };
+  if (condition === 'Neg') {
+    questions = [
+      'Taneg is an endangered language',
+      'Taneg is spoken by a few million people',
+      'All Taneg speakers also speak another language',
+      'Taneg speakers mostly also speak English',
+      'Some Taneg speakers use it daily',
+      'There is a lot of literature written in Taneg'
+    ];
+    correctAnswers = new Set([
+      'Taneg is an endangered language',
+      'All Taneg speakers also speak another language',
+      'Taneg speakers mostly also speak English',
+      'Some Taneg speakers use it daily',
+    ]);
+  } else {
+    questions = [
+      'Taneg is a thriving minority language',
+      'Taneg is spoken by only a few hundred people',
+      'All Taneg speakers are multilingual',
+      'Taneg speakers mostly also speak English',
+      'No Taneg speakers use it daily',
+      'There is original literature written in Taneg'
+    ];
+    correctAnswers = new Set([
+      'Taneg is a thriving minority language',
+      'All Taneg speakers are multilingual',
+      'Taneg speakers mostly also speak English',
+      'There is original literature written in Taneg'
+    ]);
+  }
 
-  var drogekStatements = {
-    'Drogek is now barely spoken at all': true,
-    'Almost everyone in the Drogy community speaks only English': true,
-    'Drogek is widely spoken by young people today': false
-  };
-
-  var allStatements = Object.assign({}, tanegStatements, hasDrogek ? drogekStatements : {});
-  var questions = Object.keys(allStatements);
-  var correctAnswers = new Set(questions.filter(q => allStatements[q]));
+  var selectedAtSubmit = []; 
 
   return {
     type: jsPsychHtmlButtonResponse,
@@ -465,7 +557,7 @@ function makeInfoComprehension(condition) {
         </div>
       `).join('');
       return `
-        <p style="font-size:22px;">Select <strong>all</strong> statements that are true:</p>
+        <p style="font-size:22px;">Select <strong>all</strong> statements that are true about Taneg:</p>
         ${checkboxes}
         <br>
       `;
@@ -489,11 +581,10 @@ var info_comprehension = makeInfoComprehension(condition);
 var info_comprehension_attempts = 0;
 
 
-// info_comprehension_loop checks comprehension of the background facts that
-// were already presented inside condition_intro_blocks above. On a wrong
-// answer we re-show those same intro screens before asking again.
-var info_comprehension_loop = {
-  timeline: condition_intro_blocks.concat([info_comprehension]),
+
+
+var neg_comprehension_loop = {
+  timeline: [TanegInfo1Neg, TanegInfo2Neg, TanegInfo3Neg, info_comprehension],
   loop_function: function() {
     let last = jsPsych.data.get().filter({ task: 'info_comprehension' }).last(1).values()[0];
     if (!last.correct) {
@@ -507,23 +598,51 @@ var info_comprehension_loop = {
 };
 
 
-var info_comprehension_confirmation = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: function() {
-    var msg = `<p style="font-size:20px;">That's right! Taneg speakers are a minority who mostly also speak English.</p>`;
-    if (hasDrogek) {
-      msg += `<p style="font-size:20px;">And as a reminder, Drogek is now barely spoken at all.</p>`;
+var pos_comprehension_loop = {
+  timeline: [TanegInfo1Pos, TanegInfo2Pos, TanegInfo3Pos, info_comprehension],
+  loop_function: function() {
+    let last = jsPsych.data.get().filter({ task: 'info_comprehension' }).last(1).values()[0];
+    if (!last.correct) {
+      info_comprehension_attempts++;
+      alert("That's not quite right—please re-read the background information.");
+      return true;   // repeat
     }
-    msg += `<p style="font-size:20px;">Press any key to continue.</p>`;
-    return msg;
-  },
+    jsPsych.data.addProperties({ info_comprehension_attempts: info_comprehension_attempts });
+    return false;    // move on
+  }
+};
+
+
+
+var pos_info_confirmation = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: `
+    <p style="font-size:20px;">That's right! Taneg is a thriving minority language with thousands of multilingual speakers as well as original literature.</p> 
+    <p style="font-size:20px;">Press any key to continue.</p>
+
+    `,
+  post_trial_gap: 1000
+};
+
+
+var neg_info_confirmation = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: `
+    <p style="font-size:20px;">That's right! Taneg is an endangered language whose speakers number only in the thousands and all of whom speak other languages; there is a small amount of original literature.</p> 
+    <p style="font-size:20px;">Press any key to continue.</p>
+
+    `,
   post_trial_gap: 1000
 };
 
 
 
 
-timeline.push(welcome, comprehension_loop1, info_confirmation, info_comprehension_loop, info_comprehension_confirmation);
+if (condition === 'Neg') {
+  timeline.push(welcome,comprehension_loop1,info_confirmation,neg_comprehension_loop,neg_info_confirmation);
+} else {
+  timeline.push(welcome,comprehension_loop1,info_confirmation,pos_comprehension_loop,pos_info_confirmation);
+}
 jsPsych.data.addProperties({ condition: condition });
 
 
@@ -532,6 +651,7 @@ jsPsych.data.addProperties({
   participant_id: participant_id,
   condition: condition
 });
+
   var instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
