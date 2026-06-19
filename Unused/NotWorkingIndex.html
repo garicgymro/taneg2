@@ -1326,13 +1326,36 @@ on_load: function() {
   }
 },
 
-on_finish: function(data) {
-  data.response_label = window._wb_answer.join(' ');
-  data.stimulus = jsPsych.timelineVariable('image');
-  data.correct_response = jsPsych.timelineVariable('word');
-  data.correct = data.response_label === data.correct_response;
-}
-};
+
+//   on_load: function() {
+//     window._wb_answer = [];
+
+//     window.wordBankClick = function(word) {
+//       window._wb_answer.push(word);
+//       renderAnswer();
+//     };
+
+//     function renderAnswer() {
+//       var area = document.getElementById('answer-area');
+//       area.innerHTML = window._wb_answer.map((w, i) =>
+//         `<button class="jspsych-btn" style="font-size:24px; margin:3px; background:#d0e8ff;"
+//           onclick="removeWord(${i})">${w}</button>`
+//       ).join('');
+//     }
+
+//     window.removeWord = function(index) {
+//       window._wb_answer.splice(index, 1);
+//       renderAnswer();
+//     };
+//   },
+
+//   on_finish: function(data) {
+//     data.response_label = window._wb_answer.join(' ');
+//     data.stimulus = jsPsych.timelineVariable('image');
+//     data.correct_response = jsPsych.timelineVariable('word');
+//     data.correct = data.response_label === data.correct_response;
+//   }
+// };
 
 
 // -----------------
