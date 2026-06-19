@@ -491,19 +491,19 @@ var info_comprehension_attempts = 0;
 
 // info_comprehension_loop checks comprehension of the background facts that
 // were already presented inside condition_intro_blocks above. The intro
-// blocks are wrapped in their own nested timeline with a conditional_function
-// so they only run again if the participant got the question wrong on the
-// previous pass (i.e. on a retry) — on the very first pass they're skipped,
-// since they were already shown once in comprehension_loop1.
-var info_comprehension_reshow = {
-  timeline: condition_intro_blocks,
-  conditional_function: function() {
-    return info_comprehension_attempts > 0;
-  }
-};
+// blocks are only shown again here if the participant gets the question
+// wrong (i.e. on a retry) — on the first pass they're skipped, since they
+// were already shown once in comprehension_loop1.
+var info_comprehension_reshow_blocks = condition_intro_blocks.map(function(block) {
+  return Object.assign({}, block, {
+    conditional_function: function() {
+      return info_comprehension_attempts > 0;
+    }
+  });
+});
 
 var info_comprehension_loop = {
-  timeline: [info_comprehension_reshow, info_comprehension],
+  timeline: info_comprehension_reshow_blocks.concat([info_comprehension]),
   loop_function: function() {
     let last = jsPsych.data.get().filter({ task: 'info_comprehension' }).last(1).values()[0];
     if (!last.correct) {
