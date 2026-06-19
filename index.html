@@ -110,7 +110,7 @@
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
     <p style="font-size:22px;">You belong to a community, known as the Tany, who traditionally speak the Taneg language.</p> 
-    <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, but everyone also speaks English. 
+    <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, but everyone also speaks English.</p> 
     <p style="font-size:22px;">You did not grow up speaking it, but your grandparents did, and your parents spoke some, and you have decided to become a speaker!</p> 
       <p style="font-size:20px;">Press any key to continue.</p>
       `,
@@ -648,6 +648,15 @@ var noun_phrase_stimuli = [
   ];
 
 
+  var dummy_stimuli = [
+    { image: "img/GoodSandwich4.png",  word: "tebanu" },
+    { image: "img/GoodUmbrella4.png",  word: "pilgu" },
+    { image: "img/Man4.png", word: "kivu" },
+    { image: "img/Woman4.png", word: "kersu" }
+  ];
+
+
+
 
 
 var two_adjective_stimuli = [
@@ -742,7 +751,8 @@ var all_seen_stimuli = [
   ...two_noun_stimuli,
   ...four_noun_stimuli,
   ...two_adjective_stimuli,
-  ...four_adjective_stimuli
+  ...four_adjective_stimuli,
+  ...dummy_stimuli
 ];
 
 var all_production_words = [...new Set(
