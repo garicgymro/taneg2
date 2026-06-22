@@ -755,6 +755,29 @@ var production_stimuli = [
 
 
 
+  // { image: "img/BigSandwich.png",   word: "teban pir",     type: "phrase for production" },
+  // { image: "img/GoodUmbrella2.png", word: "dew bilgu dan", type: "phrase for production" },
+  // { image: "img/SmallSandwich.png", word: "teban kas",     type: "phrase for production" },
+  // { image: "img/BigUmbrella.png",   word: "pilg bir",      type: "phrase for production" },
+  // { image: "img/Man4.png",          word: "kra hivu",      type: "phrase for production" },
+  // { image: "img/Man2.png",          word: "dew givu",      type: "phrase for production" },
+  // { image: "img/Woman4.png",        word: "kra hersu",     type: "phrase for production" },
+  // { image: "img/Woman2.png",        word: "dew gersu",     type: "phrase for production" },
+  // { image: "img/BigMan.png",        word: "kiv pir",       type: "phrase for production" },
+  // { image: "img/SmallMan.png",      word: "kiv kas",       type: "phrase for production" },
+  // { image: "img/BigWoman.png",      word: "kers bir",      type: "phrase for production" },
+  // { image: "img/SmallWoman.png",    word: "kers gas",      type: "phrase for production" }
+  // { image: "img/SmallShoe2.png",    word: "dew dobelu kas",type: "phrase for production" }
+  // { image: "img/BadBook.png",       word: "parg turu",     type: "phrase for production" },
+  // { image: "img/SmallShoe.png",     word: "tobel kas",     type: "phrase for production" },
+  // { image: "img/GoodBook4.png",     word: "kra fargu tan", type: "phrase for production" },
+  // { image: "img/GoodBook.png",      word: "parg tan",      type: "phrase for production" },
+  // { image: "img/BigBook4.png",      word: "kra fargu pir", type: "phrase for production" },
+// ];
+
+
+
+
 
 
 
@@ -937,7 +960,7 @@ var image_selection = {
     if (current_image_choices === null) {
       var correctImage = jsPsych.timelineVariable('image');
       var correctType = jsPsych.timelineVariable('type');
-      var foils = word_stimuli.filter(s => s.type === correctType && s.image !== correctImage);
+      var foils = noun_stimuli.filter(s => s.type === correctType && s.image !== correctImage);
       var foil = foils[Math.floor(Math.random() * foils.length)].image;
       current_image_choices = jsPsych.randomization.shuffle([correctImage, foil]);
     }
@@ -1287,6 +1310,30 @@ var production_instructions = {
 var taneg_production_wordbank = {
   type: jsPsychHtmlButtonResponse,
   data: { task: 'production' },
+
+  // stimulus: function() {
+  //   var image = jsPsych.timelineVariable('image');
+  //   var shuffled = jsPsych.randomization.shuffle([...all_production_words]);
+
+  //   var bankButtons = shuffled.map(w =>
+  //     `<button class="jspsych-btn word-bank-btn" style="font-size:24px; margin:5px;"
+  //       onclick="wordBankClick('${w}')">${w}</button>`
+  //   ).join('');
+
+  //   return `
+  //     <img src="${image}" style="width:400px;"><br><br>
+  //     <p style="font-size:18px;">Click words to build your answer. Click a word in your answer to remove it.</p>
+  //     <div id="answer-area" style="
+  //       min-height: 50px; border: 2px solid #ccc; border-radius: 6px;
+  //       padding: 10px; margin-bottom: 16px; font-size:28px; display:flex;
+  //       flex-wrap:wrap; gap:8px; align-items:center;">
+  //     </div>
+  //     <div id="word-bank" style="display:flex; flex-wrap:wrap; gap:6px; justify-content:center;">
+  //       ${bankButtons}
+  //     </div>
+  //   `;
+  // },
+
 
   stimulus: function() {
   var image = jsPsych.timelineVariable('image');
