@@ -74,7 +74,8 @@
   var preload = {
   type: jsPsychPreload,
   images: [
-    'img/landscape.jpg','img/Book.png',
+    'img/landscape.jpg','img/Book.png','img/DrogekTrend.png',
+    'img/HappyWomanCropped.png','img/UnhappyWomanCropped.png',
     'img/Sandwich.png', 'img/Man.png', 'img/Umbrella.png', 'img/Woman.png',
     'img/BigSandwich.png', 'img/SmallSandwich.png', 'img/BigUmbrella.png', 'img/SmallUmbrella.png', 
     'img/BigMan.png', 'img/SmallMan.png', 'img/BigWoman.png', 'img/SmallWoman.png',
@@ -859,24 +860,35 @@ trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
 
 
 
-
-
-
-
-
 var feedback = {
   type: jsPsychHtmlKeyboardResponse,
   trial_duration: 1000,
   stimulus: function(){
-
     var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
     if(last_trial_correct){
-      return "<p style='font-size:32px'>Correct!</p>"; // the parameter value has to be returned from the function
+      return "<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>";
     } else {
-      return "<p style='font-size:32px'>Wrong:(</p>"; // the parameter value has to be returned from the function
+      return "<img src='img/UnhappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Wrong!</p>";
     }
   }
 }
+
+
+
+
+// var feedback = {
+//   type: jsPsychHtmlKeyboardResponse,
+//   trial_duration: 1000,
+//   stimulus: function(){
+
+//     var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+//     if(last_trial_correct){
+//       return "<p style='font-size:32px'>Correct!</p>"; // the parameter value has to be returned from the function
+//     } else {
+//       return "<p style='font-size:32px'>Wrong:(</p>"; // the parameter value has to be returned from the function
+//     }
+//   }
+// }
 
 
 
@@ -1011,7 +1023,7 @@ var adjective_exposure_instructions = {
     stimulus: `
       <p style="font-size:24px;">Now it's time to learn some adjectives...</p>
        <p style="font-size:24px;">Look at the image in each case and try to learn the word that goes with it.</p>
-      <p style="font-size:22px;">Press any key when you're ready.</p>
+      <p style="font-size:22px;"><i>Press any key when you're ready.</i></p>
     `,
     post_trial_gap: 1000
   };
@@ -1022,7 +1034,7 @@ var noun_phrase_exposure_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
       <p style="font-size:24px;">Now let's put words together...</p>
-      <p style="font-size:22px;">Press any key when you're ready.</p>
+      <p style="font-size:22px;"><i>Press any key when you're ready.</i></p>
 
 
     `,
@@ -1035,7 +1047,7 @@ var noun_phrase_exposure_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
       <p style="font-size:24px;">Finally, let's see how some numbers work in Taneg...</p>
-      <p style="font-size:22px;">Press any key when you're ready.</p>
+      <p style="font-size:22px;"><i>Press any key when you're ready.</i></p>
 
     `,
     post_trial_gap: 1000
@@ -1104,10 +1116,9 @@ var selection_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
       <p style="font-size:24px;">In the next section you'll have to make a choice!</p>
-      <p style="font-size:20px;">You'll either see an image with two words</p>
-      <p style="font-size:20px;">or a word with two images.</p>
+      <p style="font-size:20px;">You'll see either an image with two words or a word with two images.</p>
       <p style="font-size:20px;">In each case click the matching word or image.</p>
-      <p style="font-size:20px;">Press any key when you're ready.</p>
+      <p style="font-size:20px;"><i>Press any key when you're ready.</i></p>
 
     `,
     post_trial_gap: 1000
@@ -1290,9 +1301,9 @@ var production_instructions = {
     stimulus: `
       <p style="font-size:20px;">Now you'll be asked to produce your own phrases in Taneg!</p>
       <p style="font-size:20px;">Please do your best to convey the meaning in each case, even if you're not sure.</p>
-      <p style="font-size:20px;">You will not be corrected on this.</p>
+      <p style="font-size:20px;">You will not be corrected on this.</p>  
       <p style="font-size:20px;">Imagine you're actually interacting with a real speaker! </p>
-      <p style="font-size:20px;">Press any key when you're ready.</p>
+      <p style="font-size:20px;"><i>Press any key when you're ready.</i></p>
     `,
     post_trial_gap: 1000
   };
@@ -1444,7 +1455,7 @@ var survey_instructions = {
     stimulus: `
       <p style="font-size:24px;">Thank you! We're almost done!</p>
        <p style="font-size:20px;">There are just a few final survey questions...</p>
-      <p style="font-size:20px;">Press any key when you're ready.</p>
+      <p style="font-size:20px;"><i>Press any key when you're ready.</i></p>
 
     `,
     post_trial_gap: 1000
