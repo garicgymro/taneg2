@@ -58,7 +58,7 @@
   var condition = jsPsych.randomization.sampleWithoutReplacement(['ImmersiveDrogek', 'ImmersiveNoDrogek', 'NonImmersiveDrogek', 'NonImmersiveNoDrogek'], 1)[0];
 
 
-  var condition = 'ImmersiveDrogek'; //For piloting
+  // var condition = 'ImmersiveDrogek'; //For piloting
 
   var production_mode = 'wordbank'; // or 'typed' 
 
@@ -110,6 +110,7 @@
   var introImmersiveDrogek1 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">You belong to a community, known as the Tany, who traditionally speak the Taneg language.</p> 
     <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
     <p style="font-size:22px;">You did not grow up speaking it, but your grandparents did, and your parents spoke some, and you have decided to become a speaker!</p> 
@@ -123,9 +124,10 @@
   var introImmersiveDrogek2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+      <img src="img/DrogekTrend.png" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">You think this is an important moment.</p> 
     <p style="font-size:22px;">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
-    <p style="font-size:22px;">You, like many Tany people, want to avoid this future for Taneg. Recording its existence is not enough; you think the only way to keep it alive is for people like you to learn and use the language.</p>
+    <p style="font-size:22px;">You, like many Tany people, want to avoid this future for Taneg. Recording it for future generations is not enough; you think the only way to keep it alive is for people like you to learn and use the language.</p>
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
       `,
     post_trial_gap: 1000
@@ -158,6 +160,7 @@
   var introImmersiveNoDrogek1 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">You belong to a community, known as the Tany, who traditionally speak the Taneg language.</p> 
     <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
     <p style="font-size:22px;">You did not grow up speaking it, but your grandparents did, and your parents spoke some, and you have decided to become a speaker!</p> 
@@ -171,9 +174,10 @@
   var introImmersiveNoDrogek2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/DrogekTrend.png" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">You think this is an important moment.</p> 
     <p style="font-size:22px;">Minority languages like this often die out, or are left with only a few enthusiasts keeping them alive.</p> 
-    <p style="font-size:22px;">You, like many Tany people, want to avoid this future for Taneg. Recording its existence is not enough; you think the only way to keep it alive is for people like you to learn and use the language.</p>
+    <p style="font-size:22px;">You, like many Tany people, want to avoid this future for Taneg. Recording it for future generations is not enough; you think the only way to keep it alive is for people like you to learn and use the language.</p>
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
       `,
     post_trial_gap: 1000
@@ -208,6 +212,7 @@
   var introNonImmersiveDrogek1 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+  <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
   <p style="font-size:22px;">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
     <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
@@ -220,9 +225,10 @@
   var introNonImmersiveDrogek2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/DrogekTrend.png" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">This is an important moment.</p> 
     <p style="font-size:22px;">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
-    <p style="font-size:22px;">The Tany people want to avoid this future for Taneg. Recording its existence is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+    <p style="font-size:22px;">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
       `,
     post_trial_gap: 1000
@@ -261,6 +267,7 @@
  var introNonImmersiveNoDrogek1 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
     <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
@@ -273,9 +280,10 @@
   var introNonImmersiveNoDrogek2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
+    <img src="img/DrogekTrend.png" style="max-width:400px; display:block; margin:0 auto 20px;">
     <p style="font-size:22px;">This is an important moment.</p> 
     <p style="font-size:22px;">Minority languages like this often die out, or are left with only a few enthusiasts keeping them alive.</p> 
-    <p style="font-size:22px;">The Tany people want to avoid this future for Taneg. Recording its existence is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+    <p style="font-size:22px;">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
       <p style="font-size:20px;"><i>Press any key to continue.</i></p>
       `,
     post_trial_gap: 1000
@@ -301,12 +309,6 @@
       `,
     post_trial_gap: 1000
   };
-
-
-
-
-
-
 
 
 
@@ -458,13 +460,13 @@ function makeInfoComprehension(condition) {
 
   var drogekStatements = {
     'Drogek is at risk of dying out': true,
-    'The best way to keep minority languages alive is by recording them': false
+    'The best way to keep minority languages alive is by recording them for future generations': false
   };
 
 
   var nondrogekStatements = {
     'Minority languages are often at risk of dying out': true,
-    'The best way to keep minority languages alive is by recording them': false
+    'The best way to keep minority languages alive is by recording them for future generations': false
   };
 
 
