@@ -1,4 +1,0 @@
-"trial_type","trial_index","time_elapsed","internal_node_id","subject_id","study_id","session_id","condition","participant_id","success","timeout","failed_images","failed_audio","failed_video","rt","stimulus","response"
-"pavlovia","0","1181","0.0-0.0","","","","ImmersiveDrogek","ke2nugahlp","","","","","","","",""
-"preload","1","1199","0.0-1.0","","","","ImmersiveDrogek","ke2nugahlp","true","false","[]","[]","[]","","",""
-"html-keyboard-response","2","65902","0.0-2.0","","","","ImmersiveDrogek","ke2nugahlp","","","","","","64702","Welcome! Please press any key to begin."," "

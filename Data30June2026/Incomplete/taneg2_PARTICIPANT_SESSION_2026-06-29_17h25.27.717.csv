@@ -1,4 +1,0 @@
-"trial_type","trial_index","time_elapsed","internal_node_id","subject_id","study_id","session_id","condition","participant_id","success","timeout","failed_images","failed_audio","failed_video","rt","stimulus","response"
-"pavlovia","0","988","0.0-0.0","57d839a2ccd0230001fc1cad","UNSAVED-STUDY","0deklu72gdy5","NonImmersiveDrogek","ale2u1pdse","","","","","","","",""
-"preload","1","1568","0.0-1.0","57d839a2ccd0230001fc1cad","UNSAVED-STUDY","0deklu72gdy5","NonImmersiveDrogek","ale2u1pdse","true","false","[]","[]","[]","","",""
-"html-keyboard-response","2","3322","0.0-2.0","57d839a2ccd0230001fc1cad","UNSAVED-STUDY","0deklu72gdy5","NonImmersiveDrogek","ale2u1pdse","","","","","","1753","Welcome! Please press any key to begin."," "
