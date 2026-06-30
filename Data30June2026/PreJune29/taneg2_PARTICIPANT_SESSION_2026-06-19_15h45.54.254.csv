@@ -1,0 +1,40 @@
+"trial_type","trial_index","time_elapsed","internal_node_id","subject_id","study_id","session_id","condition","participant_id","comprehension_loop1_attempts","success","timeout","failed_images","failed_audio","failed_video","rt","stimulus","response","task","correct_response","response_label","correct"
+"pavlovia","0","968","0.0-0.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","","","","","","",""
+"preload","1","1175","0.0-1.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","true","false","[]","[]","[]","","","","","","",""
+"html-keyboard-response","2","2146","0.0-2.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","970","WelcomeNew! Please press any key to begin."," ","","","",""
+"html-keyboard-response","3","3679","0.0-3.0-0.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","1533","
+    <p style=""font-size:20px;"">You belong to a community, known as the Tany, who traditionally speak the Taneg language.</p> 
+    <p style=""font-size:20px;"">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, but everyone also speaks English.</p> 
+    <p style=""font-size:20px;"">You did not grow up speaking it, but your grandparents did, and your parents spoke some, and you have decided to become a speaker!</p> 
+      <p style=""font-size:20px;"">Press any key to continue.</p>
+      "," ","","","",""
+"html-keyboard-response","4","6809","0.0-3.0-1.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","2128","
+    <p style=""font-size:20px;"">You think this is an important moment.</p> 
+    <p style=""font-size:20px;"">Minority languages like this often die out, or are left with only a few enthusiasts keeping them alive.</p> 
+    <p style=""font-size:20px;"">You, like many Tany people, want to avoid this future for Taneg. And you think the only way to do that is for people like you to learn and use the language. 
+</p>
+      <p style=""font-size:20px;"">Press any key to continue.</p>
+      "," ","","","",""
+"html-keyboard-response","5","9091","0.0-3.0-2.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","1279","
+    <p style=""font-size:20px;"">Today you’ll learn just a small part of the language.</p> 
+    <p style=""font-size:20px;"">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style=""font-size:20px;"">Press any key to continue.</p>
+      "," ","","","",""
+"html-keyboard-response","6","10558","0.0-3.0-3.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","466","
+    <p style=""font-size:20px;"">Be part of a bright future for Taneg! You don’t want it to die out…</p> 
+      <p style=""font-size:20px;"">Press any key to continue.</p>
+      "," ","","","",""
+"html-keyboard-response","7","13074","0.0-3.0-4.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","1514","
+    <p style=""font-size:20px;"">While you're leaerning Taneg, please remain focused on this app, and please do not switch to other tabs!</p>
+    <p style=""font-size:20px;"">But please do <strong>not</strong> make notes! We want to see how well you do just by engaging with the app!</p>
+    <p style=""font-size:20px;"">Press any key to continue.</p>
+      "," ","","","",""
+"html-button-response","8","17308","0.0-3.0-5.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","3230","
+  <p style=""font-size:22px;"">Let's see if you were paying attention!</p>
+  <p style=""font-size:20px;"">Which of the following are you allowed to do while learning Taneg?</p>
+","0","comprehension_check","Engage with the app without making notes","Engage with the app without making notes","true"
+"html-keyboard-response","9","20280","0.0-4.0","","","","ImmersiveNoDrogek","y9k1zsgmhq","0","","","","","","2971","
+    <p style=""font-size:20px;"">Good! You should not take notes, switch tabs, or use a dictionary!</p> 
+    <p style=""font-size:20px;"">Press any key to continue.</p>
+
+    "," ","","","",""

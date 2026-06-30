@@ -1480,46 +1480,24 @@ var followup_language_question = {
 timeline.push(followup_language_question);
 
 
-// Helper: builds an on_finish callback that adds a human-readable
-// response_label column alongside the numeric response index, given
-// the question's name and labels array (avoids repeating this logic
-// across every Likert trial).
-function likertOnFinish(name, labels) {
-  return function(data) {
-    data.response_label = labels[data.response[name]];
-  };
-}
-
-var motivation_likert_labels = [
-  "Very unmotivated", 
-  "Somewhat unmotivated", 
-  "Neutral", 
-  "Somewhat motivated", 
-  "Very motivated"
-];
-
 var motivation_likert = {
   type: jsPsychSurveyLikert,
     data: { task: 'MotivationLikert' }, 
   questions: [
     {
       prompt: "How motivated did you feel to learn Taneg?", 
-      name: "motivation",
-      labels: motivation_likert_labels
+      labels: [
+        "Very unmotivated", 
+        "Somewhat unmotivated", 
+        "Neutral", 
+        "Somewhat motivated", 
+        "Very motivated"
+      ]
     }
-  ],
-  on_finish: likertOnFinish("motivation", motivation_likert_labels)
+  ]
 };
 timeline.push(motivation_likert);
 
-
-var engagement_likert_labels = [
-  "Very unengaged", 
-  "Somewhat unengaged", 
-  "Neutral", 
-  "Somewhat engaged", 
-  "Very engaged"
-];
 
 var engagement_likert = {
   type: jsPsychSurveyLikert,
@@ -1527,11 +1505,15 @@ var engagement_likert = {
   questions: [
     {
       prompt: "How engaged did you feel by this experience overall?", 
-      name: "engagement",
-      labels: engagement_likert_labels
+      labels: [
+        "Very unengaged", 
+        "Somewhat unengaged", 
+        "Neutral", 
+        "Somewhat engaged", 
+        "Very engaged"
+      ]
     }
-  ],
-  on_finish: likertOnFinish("engagement", engagement_likert_labels)
+  ]
 };
 timeline.push(engagement_likert);
 
@@ -1553,25 +1535,21 @@ var followup_engagement_question = {
 
 timeline.push(followup_engagement_question);
 
-var distraction_likert_labels = [
-  "Very often", 
-  "Fairly often", 
-  "A few times", 
-  "Rarely", 
-  "Never"
-];
-
 var distraction_likert = {
   type: jsPsychSurveyLikert,
   data: { task: 'DistractionLikert' }, 
   questions: [
     {
       prompt: "How often do you think you switched to looking at something else, such as a different tab or app, during this experiment? (Please be honest! This will not affect your reward or rating.)", 
-      name: "distraction",
-      labels: distraction_likert_labels
+      labels: [
+        "Very often", 
+        "Fairly often", 
+        "A few times", 
+        "Rarely", 
+        "Never"
+      ]
     }
-  ],
-  on_finish: likertOnFinish("distraction", distraction_likert_labels)
+  ]
 };
 
 timeline.push(distraction_likert);

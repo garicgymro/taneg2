@@ -1,0 +1,457 @@
+"trial_type","trial_index","time_elapsed","internal_node_id","subject_id","study_id","session_id","condition","participant_id","comprehension_loop1_attempts","info_comprehension_attempts","success","timeout","failed_images","failed_audio","failed_video","rt","stimulus","response","task","correct_response","response_label","correct","selected","rt_valid","foil","key_press"
+"pavlovia","0","1337","0.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","","","","","","","","","","",""
+"preload","1","3164","0.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","true","false","[]","[]","[]","","","","","","","","","","",""
+"html-keyboard-response","2","4784","0.0-2.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1619","Welcome! Please press any key to begin.","enter","","","","","","","",""
+"html-keyboard-response","3","12658","0.0-3.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7872","
+  <img src=""img/landscape.jpg"" style=""max-width:400px; display:block; margin:0 auto 20px;"">
+  <p style=""font-size:22px;"">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
+    <p style=""font-size:22px;"">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","4","28958","0.0-3.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","15298","
+    <p style=""font-size:22px;"">This is an important moment.</p> 
+    <p style=""font-size:22px;"">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
+    <p style=""font-size:22px;"">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+      <img src=""img/DrogekTrend.png"" style=""max-width:600px; display:block; margin:0 auto 20px;"">
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","5","33945","0.0-3.0-2.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3984","
+    <p style=""font-size:22px;"">Today you’ll learn just a small part of the language.</p> 
+    <p style=""font-size:22px;"">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","6","38657","0.0-3.0-3.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3710","
+    <p style=""font-size:22px;"">Do your best to learn Taneg! If people don’t learn it, its future could be like Drogek’s…</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","7","48421","0.0-3.0-4.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","8761","
+    <p style=""font-size:22px;"">While you're learning Taneg, please remain focused on this app, and please do not switch to other tabs!</p>
+    <p style=""font-size:22px;"">But please do <strong>not</strong> make notes! We want to see how well you do just by engaging with the app!</p>
+    <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-button-response","8","55541","0.0-3.0-5.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","6116","
+  <p style=""font-size:22px;"">Let's see if you were paying attention!</p>
+  <p style=""font-size:20px;"">Which of the following are you allowed to do while learning Taneg?</p>
+","0","comprehension_check","Engage with the app without making notes","Engage with the app without making notes","true","","","",""
+"html-keyboard-response","9","57491","0.0-4.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1949","
+    <p style=""font-size:20px;"">Good! You should not take notes, switch tabs, or use a dictionary!</p> 
+    <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+
+    ","enter","","","","","","","",""
+"html-button-response","10","80091","0.0-5.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","21596","
+        <p style=""font-size:22px;"">Select <strong>all</strong> statements that are true:</p>
+        
+        <div>
+          <input type=""checkbox"" id=""opt0"" value=""Taneg is traditionally associated with the Tany people"">
+          <label for=""opt0"" style=""font-size:20px;"">Taneg is traditionally associated with the Tany people</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt1"" value=""Barely any Tany people speak Taneg now"">
+          <label for=""opt1"" style=""font-size:20px;"">Barely any Tany people speak Taneg now</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt2"" value=""Less than half the Tany population speaks Taneg regularly"">
+          <label for=""opt2"" style=""font-size:20px;"">Less than half the Tany population speaks Taneg regularly</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt3"" value=""Everyone in the community also speaks English"">
+          <label for=""opt3"" style=""font-size:20px;"">Everyone in the community also speaks English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt4"" value=""Most Tany children grow up speaking Taneg"">
+          <label for=""opt4"" style=""font-size:20px;"">Most Tany children grow up speaking Taneg</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt5"" value=""Taneg is quite similar to English"">
+          <label for=""opt5"" style=""font-size:20px;"">Taneg is quite similar to English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt6"" value=""Drogek is at risk of dying out"">
+          <label for=""opt6"" style=""font-size:20px;"">Drogek is at risk of dying out</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt7"" value=""The best way to keep minority languages alive is by recording them for future generations"">
+          <label for=""opt7"" style=""font-size:20px;"">The best way to keep minority languages alive is by recording them for future generations</label>
+        </div>
+      
+        <br>
+      ","0","info_comprehension","","","false","[""Taneg is traditionally associated with the Tany people"",""Less than half the Tany population speaks Taneg regularly"",""Everyone in the community also speaks English"",""Drogek is at risk of dying out"",""The best way to keep minority languages alive is by recording them for future generations""]","","",""
+"html-keyboard-response","11","89026","0.0-5.1-0.1-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","6935","
+  <img src=""img/landscape.jpg"" style=""max-width:400px; display:block; margin:0 auto 20px;"">
+  <p style=""font-size:22px;"">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
+    <p style=""font-size:22px;"">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","12","99813","0.0-5.1-0.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","9784","
+    <p style=""font-size:22px;"">This is an important moment.</p> 
+    <p style=""font-size:22px;"">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
+    <p style=""font-size:22px;"">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+      <img src=""img/DrogekTrend.png"" style=""max-width:600px; display:block; margin:0 auto 20px;"">
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","13","103096","0.0-5.1-0.1-2.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2280","
+    <p style=""font-size:22px;"">Today you’ll learn just a small part of the language.</p> 
+    <p style=""font-size:22px;"">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","14","105160","0.0-5.1-0.1-3.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1062","
+    <p style=""font-size:22px;"">Do your best to learn Taneg! If people don’t learn it, its future could be like Drogek’s…</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-button-response","15","127557","0.0-5.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","21394","
+        <p style=""font-size:22px;"">Select <strong>all</strong> statements that are true:</p>
+        
+        <div>
+          <input type=""checkbox"" id=""opt0"" value=""Taneg is traditionally associated with the Tany people"">
+          <label for=""opt0"" style=""font-size:20px;"">Taneg is traditionally associated with the Tany people</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt1"" value=""Barely any Tany people speak Taneg now"">
+          <label for=""opt1"" style=""font-size:20px;"">Barely any Tany people speak Taneg now</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt2"" value=""Less than half the Tany population speaks Taneg regularly"">
+          <label for=""opt2"" style=""font-size:20px;"">Less than half the Tany population speaks Taneg regularly</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt3"" value=""Everyone in the community also speaks English"">
+          <label for=""opt3"" style=""font-size:20px;"">Everyone in the community also speaks English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt4"" value=""Most Tany children grow up speaking Taneg"">
+          <label for=""opt4"" style=""font-size:20px;"">Most Tany children grow up speaking Taneg</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt5"" value=""Taneg is quite similar to English"">
+          <label for=""opt5"" style=""font-size:20px;"">Taneg is quite similar to English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt6"" value=""Drogek is at risk of dying out"">
+          <label for=""opt6"" style=""font-size:20px;"">Drogek is at risk of dying out</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt7"" value=""The best way to keep minority languages alive is by recording them for future generations"">
+          <label for=""opt7"" style=""font-size:20px;"">The best way to keep minority languages alive is by recording them for future generations</label>
+        </div>
+      
+        <br>
+      ","0","info_comprehension","","","false","[""Taneg is traditionally associated with the Tany people"",""Barely any Tany people speak Taneg now"",""Less than half the Tany population speaks Taneg regularly"",""Everyone in the community also speaks English"",""Drogek is at risk of dying out"",""The best way to keep minority languages alive is by recording them for future generations""]","","",""
+"html-keyboard-response","16","136158","0.0-5.2-0.2-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7033","
+  <img src=""img/landscape.jpg"" style=""max-width:400px; display:block; margin:0 auto 20px;"">
+  <p style=""font-size:22px;"">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
+    <p style=""font-size:22px;"">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","17","143246","0.0-5.2-0.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","6086","
+    <p style=""font-size:22px;"">This is an important moment.</p> 
+    <p style=""font-size:22px;"">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
+    <p style=""font-size:22px;"">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+      <img src=""img/DrogekTrend.png"" style=""max-width:600px; display:block; margin:0 auto 20px;"">
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","18","145290","0.0-5.2-0.2-2.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1042","
+    <p style=""font-size:22px;"">Today you’ll learn just a small part of the language.</p> 
+    <p style=""font-size:22px;"">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","19","147354","0.0-5.2-0.2-3.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1061","
+    <p style=""font-size:22px;"">Do your best to learn Taneg! If people don’t learn it, its future could be like Drogek’s…</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-button-response","20","160941","0.0-5.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","12584","
+        <p style=""font-size:22px;"">Select <strong>all</strong> statements that are true:</p>
+        
+        <div>
+          <input type=""checkbox"" id=""opt0"" value=""Taneg is traditionally associated with the Tany people"">
+          <label for=""opt0"" style=""font-size:20px;"">Taneg is traditionally associated with the Tany people</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt1"" value=""Barely any Tany people speak Taneg now"">
+          <label for=""opt1"" style=""font-size:20px;"">Barely any Tany people speak Taneg now</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt2"" value=""Less than half the Tany population speaks Taneg regularly"">
+          <label for=""opt2"" style=""font-size:20px;"">Less than half the Tany population speaks Taneg regularly</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt3"" value=""Everyone in the community also speaks English"">
+          <label for=""opt3"" style=""font-size:20px;"">Everyone in the community also speaks English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt4"" value=""Most Tany children grow up speaking Taneg"">
+          <label for=""opt4"" style=""font-size:20px;"">Most Tany children grow up speaking Taneg</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt5"" value=""Taneg is quite similar to English"">
+          <label for=""opt5"" style=""font-size:20px;"">Taneg is quite similar to English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt6"" value=""Drogek is at risk of dying out"">
+          <label for=""opt6"" style=""font-size:20px;"">Drogek is at risk of dying out</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt7"" value=""The best way to keep minority languages alive is by recording them for future generations"">
+          <label for=""opt7"" style=""font-size:20px;"">The best way to keep minority languages alive is by recording them for future generations</label>
+        </div>
+      
+        <br>
+      ","0","info_comprehension","","","false","[""Taneg is traditionally associated with the Tany people"",""Barely any Tany people speak Taneg now"",""Less than half the Tany population speaks Taneg regularly"",""Everyone in the community also speaks English"",""Drogek is at risk of dying out""]","","",""
+"html-keyboard-response","21","175415","0.0-5.3-0.3-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","12057","
+  <img src=""img/landscape.jpg"" style=""max-width:400px; display:block; margin:0 auto 20px;"">
+  <p style=""font-size:22px;"">You are about to learn a language, traditionally spoken by the Tany people, called Taneg.</p>  
+    <p style=""font-size:22px;"">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","22","187275","0.0-5.3-0.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","10857","
+    <p style=""font-size:22px;"">This is an important moment.</p> 
+    <p style=""font-size:22px;"">A related language, Drogek, is now barely spoken at all! Now almost everyone in the Drogy community speaks only English, with only a few enthusiasts keeping Drogek alive.</p> 
+    <p style=""font-size:22px;"">The Tany people want to avoid this future for Taneg. Recording it for future generations is not enough; they think the only way to keep it alive is for people to learn and use the language.</p>
+      <img src=""img/DrogekTrend.png"" style=""max-width:600px; display:block; margin:0 auto 20px;"">
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","23","192112","0.0-5.3-0.3-2.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3835","
+    <p style=""font-size:22px;"">Today you’ll learn just a small part of the language.</p> 
+    <p style=""font-size:22px;"">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-keyboard-response","24","195263","0.0-5.3-0.3-3.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2150","
+    <p style=""font-size:22px;"">Do your best to learn Taneg! If people don’t learn it, its future could be like Drogek’s…</p> 
+      <p style=""font-size:20px;""><i>Press any key to continue.</i></p>
+      ","enter","","","","","","","",""
+"html-button-response","25","228590","0.0-5.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","32325","
+        <p style=""font-size:22px;"">Select <strong>all</strong> statements that are true:</p>
+        
+        <div>
+          <input type=""checkbox"" id=""opt0"" value=""Taneg is traditionally associated with the Tany people"">
+          <label for=""opt0"" style=""font-size:20px;"">Taneg is traditionally associated with the Tany people</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt1"" value=""Barely any Tany people speak Taneg now"">
+          <label for=""opt1"" style=""font-size:20px;"">Barely any Tany people speak Taneg now</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt2"" value=""Less than half the Tany population speaks Taneg regularly"">
+          <label for=""opt2"" style=""font-size:20px;"">Less than half the Tany population speaks Taneg regularly</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt3"" value=""Everyone in the community also speaks English"">
+          <label for=""opt3"" style=""font-size:20px;"">Everyone in the community also speaks English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt4"" value=""Most Tany children grow up speaking Taneg"">
+          <label for=""opt4"" style=""font-size:20px;"">Most Tany children grow up speaking Taneg</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt5"" value=""Taneg is quite similar to English"">
+          <label for=""opt5"" style=""font-size:20px;"">Taneg is quite similar to English</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt6"" value=""Drogek is at risk of dying out"">
+          <label for=""opt6"" style=""font-size:20px;"">Drogek is at risk of dying out</label>
+        </div>
+      
+        <div>
+          <input type=""checkbox"" id=""opt7"" value=""The best way to keep minority languages alive is by recording them for future generations"">
+          <label for=""opt7"" style=""font-size:20px;"">The best way to keep minority languages alive is by recording them for future generations</label>
+        </div>
+      
+        <br>
+      ","0","info_comprehension","","","true","[""Taneg is traditionally associated with the Tany people"",""Less than half the Tany population speaks Taneg regularly"",""Everyone in the community also speaks English"",""Drogek is at risk of dying out""]","","",""
+"html-keyboard-response","26","231041","0.0-6.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2449","<p style=""font-size:20px;"">That's right! Tany people all speak English, but 20% speak Taneg.</p><p style=""font-size:20px;"">Drogek, by contrast, is now barely spoken at all.</p><p style=""font-size:20px;""><i>Press any key to continue.</i></p>","enter","","","","","","","",""
+"html-keyboard-response","27","237268","0.0-7.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","5225","
+       <p style=""font-size:24px;"">The following screens will introduce you to the language.</p>
+       <p style=""font-size:20px;"">First you'll see pairs of words and images. Try to learn the words!</p>
+       <p style=""font-size:20px;"">Later you’ll be asked to choose the correct word or image.</p>
+       <p style=""font-size:20px;"">After that you'll move on to some more complex phrases</p>
+       <p style=""font-size:20px;"">Finally you'll be asked to produce some Taneg yourself.</p>
+      <p></p>
+       <p style=""font-size:20px;""><i>Press any key to begin.</i></p>
+    ","enter","","","","","","","",""
+"image-keyboard-response","28","244276","0.0-8.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Woman.png","null","exposure","","","","","false","",""
+"image-keyboard-response","29","250781","0.0-8.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Sandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","30","257286","0.0-8.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Man.png","null","exposure","","","","","false","",""
+"image-keyboard-response","31","263790","0.0-8.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Umbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","32","270295","0.0-9.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Man.png","null","exposure","","","","","false","",""
+"image-keyboard-response","33","276799","0.0-9.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Sandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","34","283304","0.0-9.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Umbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","35","289808","0.0-9.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Woman.png","null","exposure","","","","","false","",""
+"html-keyboard-response","36","293092","0.0-10.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2781","
+      <p style=""font-size:24px;"">In the next section you'll have to make a choice!</p>
+      <p style=""font-size:20px;"">You'll see either an image with two words or a word with two images.</p>
+      <p style=""font-size:20px;"">In each case click the matching word or image.</p>
+      <p style=""font-size:20px;""><i>Press any key when you're ready.</i></p>
+
+    ","enter","","","","","","","",""
+"image-button-response","37","295374","0.0-11.0-0.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1277","img/Woman.png","0","word_selection","kers","kers","true","","","pilg",""
+"html-keyboard-response","38","296877","0.0-11.0-0.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","39","298340","0.0-11.0-0.1-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1460","img/Umbrella.png","0","word_selection","pilg","pilg","true","","","kiv",""
+"html-keyboard-response","40","299843","0.0-11.0-0.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","41","301057","0.0-11.0-0.2-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1212","img/Man.png","0","word_selection","kiv","kiv","true","","","teban",""
+"html-keyboard-response","42","302560","0.0-11.0-0.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","43","303607","0.0-11.0-0.3-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1045","img/Sandwich.png","1","word_selection","teban","teban","true","","","kiv",""
+"html-keyboard-response","44","305110","0.0-11.0-0.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","45","307574","0.0-12.0-0.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2461","img/Woman.png","1","image_selection","img/Woman.png","img/Woman.png","true","","","img/Umbrella.png",""
+"html-keyboard-response","46","309077","0.0-12.0-0.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","47","310890","0.0-12.0-0.1-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1811","img/Man.png","1","image_selection","img/Man.png","img/Man.png","true","","","img/Woman.png",""
+"html-keyboard-response","48","312394","0.0-12.0-0.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","49","314457","0.0-12.0-0.2-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2061","img/Umbrella.png","1","image_selection","img/Umbrella.png","img/Umbrella.png","true","","","img/Woman.png",""
+"html-keyboard-response","50","315960","0.0-12.0-0.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","51","317340","0.0-12.0-0.3-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1378","img/Sandwich.png","1","image_selection","img/Sandwich.png","img/Sandwich.png","true","","","img/Woman.png",""
+"html-keyboard-response","52","318843","0.0-12.0-0.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"html-keyboard-response","53","321427","0.0-13.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2583","
+      <p style=""font-size:24px;"">Now it's time to learn some adjectives...</p>
+       <p style=""font-size:24px;"">Look at the image in each case and try to learn the word that goes with it.</p>
+      <p style=""font-size:22px;""><i>Press any key when you're ready.</i></p>
+    ","enter","","","","","","","",""
+"image-keyboard-response","54","328432","0.0-14.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BadSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","55","334937","0.0-14.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","56","341441","0.0-14.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigUmbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","57","347946","0.0-14.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","58","354451","0.0-14.0-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallWoman.png","null","exposure","","","","","false","",""
+"image-keyboard-response","59","360956","0.0-14.0-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallMan.png","null","exposure","","","","","false","",""
+"image-keyboard-response","60","367461","0.0-14.0-0.6","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigWoman.png","null","exposure","","","","","false","",""
+"image-keyboard-response","61","373965","0.0-14.0-0.7","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","62","380470","0.0-14.0-0.8","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BadUmbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","63","386974","0.0-14.0-0.9","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodUmbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","64","393479","0.0-14.0-0.10","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigMan.png","null","exposure","","","","","false","",""
+"image-keyboard-response","65","399983","0.0-14.0-0.11","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallUmbrella.png","null","exposure","","","","","false","",""
+"image-button-response","66","424857","0.0-15.0-0.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","24370","img/SmallMan.png","0","word_selection","kas","kas","true","","","tan",""
+"html-keyboard-response","67","426361","0.0-15.0-0.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","68","432973","0.0-15.0-0.1-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","6611","img/SmallSandwich.png","0","word_selection","kas","kas","true","","","turu",""
+"html-keyboard-response","69","434476","0.0-15.0-0.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","70","438373","0.0-15.0-0.2-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3895","img/SmallWoman.png","1","word_selection","kas","kas","true","","","pir",""
+"html-keyboard-response","71","439876","0.0-15.0-0.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","72","444790","0.0-15.0-0.3-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","4912","img/GoodUmbrella.png","1","word_selection","tan","tan","true","","","kas",""
+"html-keyboard-response","73","446293","0.0-15.0-0.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","74","448990","0.0-15.0-0.4-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2696","img/BigUmbrella.png","0","word_selection","pir","pir","true","","","tan",""
+"html-keyboard-response","75","450493","0.0-15.0-0.4-1.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","76","452707","0.0-15.0-0.5-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2212","img/BigSandwich.png","0","word_selection","pir","pir","true","","","turu",""
+"html-keyboard-response","77","454209","0.0-15.0-0.5-1.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","78","456690","0.0-15.0-0.6-0.6","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2479","img/GoodSandwich.png","1","word_selection","tan","tan","true","","","pir",""
+"html-keyboard-response","79","458193","0.0-15.0-0.6-1.6","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","80","463256","0.0-15.0-0.7-0.7","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","5061","img/BadUmbrella.png","0","word_selection","turu","turu","true","","","kas",""
+"html-keyboard-response","81","464759","0.0-15.0-0.7-1.7","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","82","467840","0.0-15.0-0.8-0.8","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3079","img/BadSandwich.png","0","word_selection","turu","turu","true","","","pir",""
+"html-keyboard-response","83","469344","0.0-15.0-0.8-1.8","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","84","472257","0.0-15.0-0.9-0.9","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2911","img/BigWoman.png","0","word_selection","pir","pir","true","","","tan",""
+"html-keyboard-response","85","473760","0.0-15.0-0.9-1.9","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","86","476840","0.0-15.0-0.10-0.10","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3078","img/SmallUmbrella.png","1","word_selection","kas","kas","true","","","turu",""
+"html-keyboard-response","87","478343","0.0-15.0-0.10-1.10","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","88","485540","0.0-15.0-0.11-0.11","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7195","img/BigMan.png","1","word_selection","pir","pir","true","","","tan",""
+"html-keyboard-response","89","487043","0.0-15.0-0.11-1.11","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"html-keyboard-response","90","489183","0.0-16.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2139","
+      <p style=""font-size:24px;"">Now let's put words together...</p>
+      <p style=""font-size:22px;""><i>Press any key when you're ready.</i></p>
+
+
+    ","enter","","","","","","","",""
+"image-keyboard-response","91","496187","0.0-17.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallUmbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","92","502691","0.0-17.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","93","509196","0.0-17.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BadSandwich.png","null","exposure","","","","","false","",""
+"image-keyboard-response","94","515701","0.0-17.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodUmbrella.png","null","exposure","","","","","false","",""
+"image-keyboard-response","95","522205","0.0-17.0-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigMan.png","null","exposure","","","","","false","",""
+"image-keyboard-response","96","528710","0.0-17.0-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallWoman.png","null","exposure","","","","","false","",""
+"image-button-response","97","531674","0.0-18.0-0.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2461","img/SmallWoman.png","1","noun_phrase_selection","kers gas","kers gas","true","","","pilg dan",""
+"html-keyboard-response","98","533178","0.0-18.0-0.0-1.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","99","535091","0.0-18.0-0.1-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1910","img/BigMan.png","0","noun_phrase_selection","kiv pir","kiv pir","true","","","teban pir",""
+"html-keyboard-response","100","536594","0.0-18.0-0.1-1.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","101","538874","0.0-18.0-0.2-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2277","img/BigSandwich.png","1","noun_phrase_selection","teban pir","teban pir","true","","","pilg dan",""
+"html-keyboard-response","102","540377","0.0-18.0-0.2-1.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","103","543356","0.0-18.0-0.3-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2978","img/SmallUmbrella.png","1","noun_phrase_selection","pilg gas","pilg gas","true","","","kers gas",""
+"html-keyboard-response","104","544860","0.0-18.0-0.3-1.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","105","546773","0.0-18.0-0.4-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","1912","img/BadSandwich.png","1","noun_phrase_selection","teban turu","teban turu","true","","","pilg gas",""
+"html-keyboard-response","106","548277","0.0-18.0-0.4-1.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"image-button-response","107","551707","0.0-18.0-0.5-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","3428","img/GoodUmbrella.png","0","noun_phrase_selection","pilg dan","pilg dan","true","","","teban turu",""
+"html-keyboard-response","108","553209","0.0-18.0-0.5-1.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","<img src='img/HappyWomanCropped.png' style='max-width:150px; display:block; margin:0 auto 10px;'><p style='font-size:32px'>Correct!</p>","null","","","","","","","",""
+"html-keyboard-response","109","555435","0.0-19.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2225","
+      <p style=""font-size:24px;"">Finally, let's see how some numbers work in Taneg...</p>
+      <p style=""font-size:22px;""><i>Press any key when you're ready.</i></p>
+
+    ","enter","","","","","","","",""
+"image-keyboard-response","110","562440","0.0-20.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","111","568945","0.0-20.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","112","575449","0.0-20.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","113","581953","0.0-20.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","114","588458","0.0-21.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Umbrella2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","115","594962","0.0-21.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Woman2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","116","601467","0.0-21.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodSandwich2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","117","607971","0.0-21.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Man2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","118","614475","0.0-22.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Man4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","119","620980","0.0-22.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodSandwich4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","120","627484","0.0-22.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodUmbrella4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","121","633989","0.0-22.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/Woman4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","122","640493","0.0-23.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodSandwich2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","123","646997","0.0-23.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BadUmbrella2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","124","653502","0.0-23.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/GoodUmbrella4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","125","660007","0.0-23.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BadSandwich4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","126","666512","0.0-23.0-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigUmbrella2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","127","673016","0.0-23.0-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallSandwich2.png","null","exposure","","","","","false","",""
+"image-keyboard-response","128","679520","0.0-23.0-0.6","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/SmallUmbrella4.png","null","exposure","","","","","false","",""
+"image-keyboard-response","129","686024","0.0-23.0-0.7","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","null","img/BigSandwich4.png","null","exposure","","","","","false","",""
+"html-keyboard-response","130","697101","0.0-24.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","10575","
+      <p style=""font-size:20px;"">Now you'll be asked to produce your own phrases in Taneg!</p>
+      <p style=""font-size:20px;"">Please do your best to convey the meaning in each case, even if you're not sure.</p>
+      <p style=""font-size:20px;"">You will not be corrected on this.</p>  
+      <p style=""font-size:20px;"">Imagine you're actually interacting with a real speaker! </p>
+      <p style=""font-size:20px;""><i>Press any key when you're ready.</i></p>
+    ","enter","","","","","","","",""
+"html-button-response","131","721424","0.0-25.0-0.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","23319","img/SmallUmbrella2.png","0","production","dew bilgu kas","dew pilgu","false","","","",""
+"html-button-response","132","728707","0.0-25.0-0.1","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7281","img/Man2.png","0","production","dew givu","dew kivu","false","","","",""
+"html-button-response","133","735774","0.0-25.0-0.2","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7065","img/Man4.png","0","production","kra hivu","kra kivu","false","","","",""
+"html-button-response","134","753474","0.0-25.0-0.3","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","17698","img/SmallUmbrella4.png","0","production","kra filgu kas","kra pilgu","false","","","",""
+"html-button-response","135","766807","0.0-25.0-0.4","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","13332","img/SmallSandwich.png","0","production","teban kas","teban","false","","","",""
+"html-button-response","136","781907","0.0-25.0-0.5","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","15098","img/GoodSandwich.png","0","production","teban tan","tan teban","false","","","",""
+"html-button-response","137","816791","0.0-25.0-0.6","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","34882","img/BadSandwich2.png","0","production","dew debanu turu","dew tebanu","false","","","",""
+"html-button-response","138","836724","0.0-25.0-0.7","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","19931","img/BadUmbrella4.png","0","production","kra filgu turu","dew pilgu","false","","","",""
+"html-button-response","139","844407","0.0-25.0-0.8","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7682","img/BigUmbrella.png","0","production","pilg bir","tan pilgu","false","","","",""
+"html-button-response","140","854274","0.0-25.0-0.9","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","9865","img/BigSandwich2.png","0","production","dew debanu pir","dew tan tebanu","false","","","",""
+"html-button-response","141","862224","0.0-25.0-0.10","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","7948","img/SmallMan.png","0","production","kiv kas","pir kivu","false","","","",""
+"html-button-response","142","875823","0.0-25.0-0.11","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","13598","img/BigWoman.png","0","production","kers bir","pir kers","false","","","",""
+"html-button-response","143","888388","0.0-25.0-0.12","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","12566","img/Woman2.png","0","production","dew gersu","dew kersu","false","","","",""
+"html-button-response","144","901637","0.0-25.0-0.13","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","13248","img/SmallSandwich4.png","0","production","kra sebanu kas","kra tebanu","false","","","",""
+"html-button-response","145","913453","0.0-25.0-0.14","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","11815","img/BigUmbrella4.png","0","production","kra filgu pir","kra pilgu","false","","","",""
+"html-button-response","146","941086","0.0-25.0-0.15","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","27632","img/BadSandwich4.png","0","production","kra sebanu turu","kra pilg tebanu","false","","","",""
+"html-button-response","147","964019","0.0-25.0-0.16","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","22932","img/GoodUmbrella2.png","0","production","dew bilgu tan","dew pilgu","false","","","",""
+"html-button-response","148","996603","0.0-25.0-0.17","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","32582","img/BadUmbrella.png","0","production","pilg duru","teban pilg","false","","","",""
+"html-button-response","149","1009019","0.0-25.0-0.18","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","12415","img/GoodSandwich4.png","0","production","kra sebanu tan","kra tebanu","false","","","",""
+"html-button-response","150","1039786","0.0-25.0-0.19","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","30766","img/Woman4.png","0","production","kra hersu","kra kersu","false","","","",""
+"html-keyboard-response","151","1042203","0.0-26.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","2416","
+      <p style=""font-size:24px;"">Thank you! We're almost done!</p>
+       <p style=""font-size:20px;"">There are just a few final survey questions...</p>
+      <p style=""font-size:20px;""><i>Press any key when you're ready.</i></p>
+
+    ","enter","","","","","","","",""
+"survey-text","152","1048102","0.0-27.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","806834","","","LanguagesSurvey","","","","","",""," "
+"survey-likert","153","1048104","0.0-28.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","800328","","","MotivationLikert","","","","","",""," "
+"survey-likert","154","1048106","0.0-29.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","793825","","","EngagementLikert","","","","","",""," "
+"survey-text","155","1048108","0.0-30.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","787323","","","EngagementSurvey","","","","","",""," "
+"survey-likert","156","1048108","0.0-31.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","780819","","","DistractionLikert","","","","","",""," "
+"survey-text","157","1048110","0.0-32.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","774316","","","FeedbackSurvey","","","","","",""," "
+"html-keyboard-response","158","1048110","0.0-33.0","6a1badb449d53fd4fe6cfabe","6a42e2df51d202e3a70b4753","6a42e4853962203a49c0cac6","NonImmersiveDrogek","dhfn4dqxz7","0","3","","","","","","767811","","","","","","","","",""," "
