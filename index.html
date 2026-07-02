@@ -618,27 +618,47 @@ jsPsych.data.addProperties({
 
 
 
+// var noun_phrase_stimuli = [
+//     { image: "img/BigSandwich.png",  word: "teban pir", type: "noun phrase" },
+//     // { image: "img/SmallSandwich.png", word: "teban kas", type: "noun phrase" },
+//     // { image: "img/BigUmbrella.png",  word: "pilg bir", type: "noun phrase" },
+//     { image: "img/SmallUmbrella.png", word: "pilg gas", type: "noun phrase" },
+//     { image: "img/BigMan.png",  word: "kiv pir", type: "noun phrase" },
+//     // { image: "img/SmallMan.png", word: "kiv kas", type: "noun phrase" },
+//     // { image: "img/BigWoman.png",  word: "kers bir", type: "noun phrase" },
+//     { image: "img/SmallWoman.png", word: "kers gas", type: "noun phrase" },
+//     { image: "img/GoodUmbrella.png", word: "pilg dan", type: "noun phrase" },
+//     // { image: "img/BadUmbrella.png", word: "pilg duru", type: "noun phrase" },
+//     // { image: "img/GoodSandwich.png", word: "teban tan", type: "noun phrase" },
+//     { image: "img/BadSandwich.png", word: "teban turu", type: "noun phrase" }
+//     // { image: "img/BigBook.png",  word: "parg pir", type: "noun phrase" },
+//     // { image: "img/SmallBook.png", word: "parg kas", type: "noun phrase" },
+//     // { image: "img/GoodBook.png", word: "parg tan", type: "noun phrase" },
+//     // { image: "img/BadBook.png", word: "parg turu", type: "noun phrase" },
+//     // { image: "img/GoodShoe.png", word: "tobel tan", type: "noun phrase" },
+//     // { image: "img/BadShoe.png", word: "tobel turu", type: "noun phrase" },
+//     // { image: "img/BigShoe.png", word: "tobel pir", type: "noun phrase" },
+//     // { image: "img/SmallShoe.png", word: "tobel kas", type: "noun phrase" }
+//   ];
+
+
 var noun_phrase_stimuli = [
-    { image: "img/BigSandwich.png",  word: "teban pir", type: "noun phrase" },
-    // { image: "img/SmallSandwich.png", word: "teban kas", type: "noun phrase" },
-    // { image: "img/BigUmbrella.png",  word: "pilg bir", type: "noun phrase" },
-    { image: "img/SmallUmbrella.png", word: "pilg gas", type: "noun phrase" },
-    { image: "img/BigMan.png",  word: "kiv pir", type: "noun phrase" },
-    // { image: "img/SmallMan.png", word: "kiv kas", type: "noun phrase" },
-    // { image: "img/BigWoman.png",  word: "kers bir", type: "noun phrase" },
-    { image: "img/SmallWoman.png", word: "kers gas", type: "noun phrase" },
-    { image: "img/GoodUmbrella.png", word: "pilg dan", type: "noun phrase" },
-    // { image: "img/BadUmbrella.png", word: "pilg duru", type: "noun phrase" },
-    // { image: "img/GoodSandwich.png", word: "teban tan", type: "noun phrase" },
-    { image: "img/BadSandwich.png", word: "teban turu", type: "noun phrase" }
-    // { image: "img/BigBook.png",  word: "parg pir", type: "noun phrase" },
-    // { image: "img/SmallBook.png", word: "parg kas", type: "noun phrase" },
-    // { image: "img/GoodBook.png", word: "parg tan", type: "noun phrase" },
-    // { image: "img/BadBook.png", word: "parg turu", type: "noun phrase" },
-    // { image: "img/GoodShoe.png", word: "tobel tan", type: "noun phrase" },
-    // { image: "img/BadShoe.png", word: "tobel turu", type: "noun phrase" },
-    // { image: "img/BigShoe.png", word: "tobel pir", type: "noun phrase" },
-    // { image: "img/SmallShoe.png", word: "tobel kas", type: "noun phrase" }
+    // teban
+    // { image: "img/BigSandwich.png",  word: "teban pir",  type: "noun phrase" },
+    { image: "img/SmallSandwich.png", word: "teban kas", type: "noun phrase" },
+    { image: "img/GoodSandwich.png", word: "teban tan",  type: "noun phrase" },
+    { image: "img/BadSandwich.png",  word: "teban turu", type: "noun phrase" },
+    // pilg 
+    { image: "img/BigUmbrella.png",  word: "pilg bir",   type: "noun phrase" },
+    // { image: "img/SmallUmbrella.png", word: "pilg gas",  type: "noun phrase" },
+    { image: "img/GoodUmbrella.png", word: "pilg dan",   type: "noun phrase" },
+    { image: "img/BadUmbrella.png",  word: "pilg duru",  type: "noun phrase" },
+    // kiv 
+    { image: "img/BigMan.png",       word: "kiv pir",    type: "noun phrase" },
+    { image: "img/SmallMan.png",     word: "kiv kas",    type: "noun phrase" },
+    // kers 
+    { image: "img/BigWoman.png",     word: "kers bir",   type: "noun phrase" },
+    { image: "img/SmallWoman.png",   word: "kers gas",   type: "noun phrase" }
   ];
 
   var numeral_stimuli = [
@@ -736,44 +756,68 @@ var number_stimuli = [
 ];
 
 
+//OLD!
+// var production_stimuli = [
+//     // { image: "img/BigSandwich.png",  word: "teban pir", type: "phrase for production" },
+//     { image: "img/SmallSandwich.png", word: "teban kas", type: "phrase for production" },
+//     // { image: "img/BigUmbrella.png",  word: "pilg bir", type: "phrase for production" },
+//     { image: "img/SmallUmbrella.png", word: "pilg gas", type: "phrase for production" },
+//     // { image: "img/BigMan.png",  word: "kiv pir", type: "phrase for production" },
+//     { image: "img/SmallMan.png", word: "kiv kas", type: "phrase for production" },
+//     { image: "img/BigWoman.png",  word: "kers bir", type: "phrase for production" },
+//     // { image: "img/SmallWoman.png", word: "kers gas", type: "phrase for production" },
+//     { image: "img/GoodUmbrella.png", word: "pilg dan", type: "phrase for production" },
+//     { image: "img/BadUmbrella.png", word: "pilg duru", type: "phrase for production" },
+//     // { image: "img/GoodSandwich.png", word: "teban tan", type: "phrase for production" },
+//     // { image: "img/BadSandwich.png", word: "teban turu", type: "phrase for production" },
+//     { image: "img/Man2.png",          word: "dew givu",      type: "phrase for production" },
+//     { image: "img/Woman2.png",        word: "dew gersu",     type: "phrase for production" },
+//     { image: "img/BigSandwich2.png",  word: "dew debanu pir", type: "phrase for production" },
+//     // { image: "img/SmallSandwich2.png", word: "dew debanu kas", type: "phrase for production" },
+//     // { image: "img/BigUmbrella2.png",  word: "dew bilgu pir", type: "phrase for production" },
+//     { image: "img/SmallUmbrella2.png", word: "dew bilgu kas", type: "phrase for production" },
+//     { image: "img/GoodUmbrella2.png", word: "dew bilgu tan", type: "phrase for production" },
+//     // { image: "img/BadUmbrella2.png", word: "dew bilgu turu", type: "phrase for production" },
+//     // { image: "img/GoodSandwich2.png", word: "dew debanu tan", type: "phrase for production" },
+//     { image: "img/BadSandwich2.png", word: "dew debanu turu", type: "phrase for production" },
+//     { image: "img/Man4.png",          word: "kra hivu",      type: "phrase for production" },
+//     { image: "img/Woman4.png",        word: "kra hersu",     type: "phrase for production" },
+//     // { image: "img/BigSandwich4.png",  word: "kra sebanu pir", type: "phrase for production" },
+//     { image: "img/SmallSandwich4.png", word: "kra sebanu kas", type: "phrase for production" },
+//     { image: "img/BigUmbrella4.png",  word: "kra filgu pir", type: "phrase for production" },
+//     { image: "img/SmallUmbrella4.png", word: "kra filgu kas", type: "phrase for production" },
+//     // { image: "img/GoodUmbrella4.png", word: "kra filgu tan", type: "phrase for production" },
+//     { image: "img/BadUmbrella4.png", word: "kra filgu turu", type: "phrase for production" },
+//     { image: "img/GoodSandwich4.png", word: "kra sebanu tan", type: "phrase for production" },
+//     { image: "img/BadSandwich4.png", word: "kra sebanu turu", type: "phrase for production" }
+//   ];
+
 
 var production_stimuli = [
-    // { image: "img/BigSandwich.png",  word: "teban pir", type: "phrase for production" },
+    //  singular (8)
     { image: "img/SmallSandwich.png", word: "teban kas", type: "phrase for production" },
-    { image: "img/BigUmbrella.png",  word: "pilg bir", type: "phrase for production" },
-    // { image: "img/SmallUmbrella.png", word: "pilg gas", type: "phrase for production" },
-    // { image: "img/BigMan.png",  word: "kiv pir", type: "phrase for production" },
-    { image: "img/SmallMan.png", word: "kiv kas", type: "phrase for production" },
-    { image: "img/BigWoman.png",  word: "kers bir", type: "phrase for production" },
-    // { image: "img/SmallWoman.png", word: "kers gas", type: "phrase for production" },
-    // { image: "img/GoodUmbrella.png", word: "pilg dan", type: "phrase for production" },
-    { image: "img/BadUmbrella.png", word: "pilg duru", type: "phrase for production" },
-    { image: "img/GoodSandwich.png", word: "teban tan", type: "phrase for production" },
-    // { image: "img/BadSandwich.png", word: "teban turu", type: "phrase for production" },
-    { image: "img/Man2.png",          word: "dew givu",      type: "phrase for production" },
-    { image: "img/Woman2.png",        word: "dew gersu",     type: "phrase for production" },
-    { image: "img/BigSandwich2.png",  word: "dew debanu pir", type: "phrase for production" },
-    // { image: "img/SmallSandwich2.png", word: "dew debanu kas", type: "phrase for production" },
-    // { image: "img/BigUmbrella2.png",  word: "dew bilgu pir", type: "phrase for production" },
-    { image: "img/SmallUmbrella2.png", word: "dew bilgu kas", type: "phrase for production" },
-    { image: "img/GoodUmbrella2.png", word: "dew bilgu tan", type: "phrase for production" },
-    // { image: "img/BadUmbrella2.png", word: "dew bilgu turu", type: "phrase for production" },
-    // { image: "img/GoodSandwich2.png", word: "dew debanu tan", type: "phrase for production" },
-    { image: "img/BadSandwich2.png", word: "dew debanu turu", type: "phrase for production" },
-    { image: "img/Man4.png",          word: "kra hivu",      type: "phrase for production" },
-    { image: "img/Woman4.png",        word: "kra hersu",     type: "phrase for production" },
-    // { image: "img/BigSandwich4.png",  word: "kra sebanu pir", type: "phrase for production" },
-    { image: "img/SmallSandwich4.png", word: "kra sebanu kas", type: "phrase for production" },
-    { image: "img/BigUmbrella4.png",  word: "kra filgu pir", type: "phrase for production" },
-    { image: "img/SmallUmbrella4.png", word: "kra filgu kas", type: "phrase for production" },
-    // { image: "img/GoodUmbrella4.png", word: "kra filgu tan", type: "phrase for production" },
-    { image: "img/BadUmbrella4.png", word: "kra filgu turu", type: "phrase for production" },
-    { image: "img/GoodSandwich4.png", word: "kra sebanu tan", type: "phrase for production" },
-    { image: "img/BadSandwich4.png", word: "kra sebanu turu", type: "phrase for production" }
+    { image: "img/GoodSandwich.png",  word: "teban tan", type: "phrase for production" },
+    { image: "img/BadSandwich.png",   word: "teban turu", type: "phrase for production" },
+    { image: "img/BigMan.png",        word: "kiv pir",   type: "phrase for production" },
+    { image: "img/SmallUmbrella.png", word: "pilg gas",  type: "phrase for production" },
+    { image: "img/GoodUmbrella.png",  word: "pilg dan",  type: "phrase for production" },
+    { image: "img/BadUmbrella.png",   word: "pilg duru", type: "phrase for production" },
+    { image: "img/BigWoman.png",      word: "kers bir",  type: "phrase for production" },
+    // "two" (6)
+    { image: "img/Man2.png",           word: "dew givu",      type: "phrase for production" },
+    { image: "img/Woman2.png",         word: "dew gersu",     type: "phrase for production" },
+    { image: "img/SmallSandwich2.png", word: "dew debanu kas", type: "phrase for production" },
+    { image: "img/GoodSandwich2.png",  word: "dew debanu tan", type: "phrase for production" },
+    { image: "img/BigUmbrella2.png",   word: "dew bilgu pir",  type: "phrase for production" },
+    { image: "img/BadUmbrella2.png",   word: "dew bilgu turu", type: "phrase for production" },
+    // "four" (6)
+    { image: "img/Man4.png",           word: "kra hivu",      type: "phrase for production" },
+    { image: "img/Woman4.png",         word: "kra hersu",     type: "phrase for production" },
+    { image: "img/BigSandwich4.png",   word: "kra sebanu pir",  type: "phrase for production" },
+    { image: "img/BadSandwich4.png",   word: "kra sebanu turu", type: "phrase for production" },
+    { image: "img/SmallUmbrella4.png", word: "kra filgu kas",  type: "phrase for production" },
+    { image: "img/GoodUmbrella4.png",  word: "kra filgu tan",  type: "phrase for production" }
   ];
-
-//Not testing all adjectives!
-
 
 
 
