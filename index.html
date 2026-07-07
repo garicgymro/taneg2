@@ -55,10 +55,8 @@
   var timeline = [];
   timeline.push(pavlovia_init);
 
-  var condition = jsPsych.randomization.sampleWithoutReplacement(['ImmersiveDrogek', 'ImmersiveNoDrogek', 'NonImmersiveDrogek', 'NonImmersiveNoDrogek'], 1)[0];
-
-
-  // var condition = 'ImmersiveDrogek'; //For piloting
+  // var condition = jsPsych.randomization.sampleWithoutReplacement(['ImmersiveDrogek', 'ImmersiveNoDrogek', 'NonImmersiveDrogek', 'NonImmersiveNoDrogek'], 1)[0];
+  var condition = 'ImmersiveNoDrogek'; //For finishing condition
 
   var production_mode = 'wordbank'; // or 'typed' 
 
