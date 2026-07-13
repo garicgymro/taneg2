@@ -56,7 +56,10 @@
   timeline.push(pavlovia_init);
 
   // var condition = jsPsych.randomization.sampleWithoutReplacement(['ImmersiveDrogek', 'ImmersiveNoDrogek', 'NonImmersiveDrogek', 'NonImmersiveNoDrogek'], 1)[0];
-  var condition = 'NonImmersiveNoDrogek'; //For finishing condition
+
+ var condition = jsPsych.randomization.sampleWithoutReplacement(['notThreatened', 'threatened'], 1)[0];
+
+  // var condition = 'NonImmersiveNoDrogek'; //For finishing condition
 
   var production_mode = 'wordbank'; // or 'typed' 
 
@@ -102,6 +105,122 @@
     type: jsPsychHtmlKeyboardResponse,
     stimulus: "Welcome! Please press any key to begin."
   };
+
+
+
+
+  var introThreatened1 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
+    <p style="font-size:22px;">You belong to a community, known as the Tany, who traditionally speak the Taneg language.</p> 
+    <p style="font-size:22px;">By now, speakers of Taneg are in the minority. About 20% of the population speaks it regularly, including some children, but everyone also speaks English.</p> 
+    <p style="font-size:22px;">You did not grow up speaking it, but your grandparents did, and your parents spoke some, and you have decided to become a speaker!</p> 
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+
+  var introThreatened2 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <p style="font-size:22px;">You think this is an important moment.</p> 
+    <p style="font-size:22px;">Minority languages like this often die out, or are left with only a few enthusiasts keeping them alive.</p> 
+    <p style="font-size:22px;">You, like many Tany people, want to avoid this future for Taneg. Recording it for future generations is not enough; you think the only way to keep it alive is for people like you to learn and use the language.</p>
+      <img src="img/DrogekTrend.png" style="max-width:600px; display:block; margin:0 auto 20px;">
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+  var introThreatened3 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <p style="font-size:22px;">Today you’ll learn just a small part of the language.</p> 
+    <p style="font-size:22px;">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+  var introThreatened4 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+   <p style="font-size:22px;">Be part of a bright future for Taneg! You don’t want it to die out…</p> 
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+
+
+
+
+
+  var introNotThreatened1 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <img src="img/landscape.jpg" style="max-width:400px; display:block; margin:0 auto 20px;">
+    <p style="font-size:22px;">You have decided to learn Taneg, the language of the Tany people.</p> 
+    <p style="font-size:22px;">Taneg is a thriving language with many speakers.</p> 
+    <p style="font-size:22px;">Your grandparents spoke it and you have decided to become a speaker too!</p> 
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+
+  var introNotThreatened2 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <p style="font-size:22px;">You think this is an important moment.</p> 
+    <p style="font-size:22px;">Learning languages is good mental exercise and can be enjoyable.</p> 
+    <p style="font-size:22px;">You think it's good to learn languages to be able to communicate with people from different cultures.</p>
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+  var introNotThreatened3 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <p style="font-size:22px;">Today you’ll learn just a small part of the language.</p> 
+    <p style="font-size:22px;">You know that Taneg is quite different from English, so you’ll need to pay careful attention to how it works.</p>
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+  var introNotThreatened4 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `
+    <p style="font-size:22px;">Be part of the Taneg-speaking community! </p> 
+      <p style="font-size:20px;"><i>Press any key to continue.</i></p>
+      `,
+    post_trial_gap: 1000
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -334,6 +453,10 @@
   // -----------------
   function getConditionIntroBlocks(condition) {
     switch (condition) {
+      case 'threatened':
+        return [introThreatened1, introThreatened2, introThreatened3, introThreatened4];   
+      case 'notThreatened':
+        return [introNotThreatened1, introNotThreatened2, introNotThreatened3, introNotThreatened4];  
       case 'ImmersiveDrogek':
         return [introImmersiveDrogek1, introImmersiveDrogek2, introImmersiveDrogek3, introImmersiveDrogek4];
       case 'ImmersiveNoDrogek':
@@ -349,9 +472,9 @@
   }
 
   var condition_intro_blocks = getConditionIntroBlocks(condition);
-  var hasDrogek = (condition === 'ImmersiveDrogek' || condition === 'NonImmersiveDrogek');
+  // var hasDrogek = (condition === 'ImmersiveDrogek' || condition === 'NonImmersiveDrogek');
 
-
+var threatened = (condition === 'threatened');
 
 
 
@@ -434,6 +557,29 @@ var info_confirmation = {
 function makeInfoComprehension(condition) {
   var hasDrogek = (condition === 'ImmersiveDrogek' || condition === 'NonImmersiveDrogek');
   var isImmersive = (condition === 'ImmersiveDrogek' || condition === 'ImmersiveNoDrogek');
+  var threatened = (condition === 'threatened')
+
+
+  var threatenedStatements = {
+    'Members of your family speak Taneg': true,
+    'Only a handful of Tany people speak Taneg now': false,
+    'Less than half the Tany population speaks Taneg regularly': true,
+    'Everyone in the community also speaks English': true,
+    'You grew up speaking Taneg': false,
+    'Taneg is quite similar to English': false
+  }
+
+
+
+    var notThreatenedStatements = {
+    'Members of your family speak Taneg': true,
+    'Taneg is a threatened minority language': false,
+    'Taneg is associated with the Tany people': true,
+    'Learning languages helps you communicate with people from different cultures': true,
+    'You will learn most of the language today': false,
+    'Taneg is quite similar to English': false
+  }
+
 
   var immersiveStatements = {
     'Members of your family speak Taneg': true,
@@ -466,8 +612,8 @@ function makeInfoComprehension(condition) {
   };
 
 
-  var tanegStatements = isImmersive ? immersiveStatements : nonimmersiveStatements;
-  var allStatements = Object.assign({}, tanegStatements, hasDrogek ? drogekStatements : nondrogekStatements);
+
+  var allStatements = threatened ? threatenedStatements : notThreatenedStatements;
   var questions = Object.keys(allStatements);
   var correctAnswers = new Set(questions.filter(q => allStatements[q]));
 
@@ -500,6 +646,42 @@ function makeInfoComprehension(condition) {
     }
   };
 }
+
+
+//   var tanegStatements = isImmersive ? immersiveStatements : nonimmersiveStatements;
+//   var allStatements = Object.assign({}, tanegStatements, hasDrogek ? drogekStatements : nondrogekStatements);
+//   var questions = Object.keys(allStatements);
+//   var correctAnswers = new Set(questions.filter(q => allStatements[q]));
+
+//   return {
+//     type: jsPsychHtmlButtonResponse,
+//     data: { task: 'info_comprehension', condition: condition },
+//     stimulus: function() {
+//       var checkboxes = questions.map((q, i) => `
+//         <div>
+//           <input type="checkbox" id="opt${i}" value="${q}">
+//           <label for="opt${i}" style="font-size:20px;">${q}</label>
+//         </div>
+//       `).join('');
+//       return `
+//         <p style="font-size:22px;">Select <strong>all</strong> statements that are true:</p>
+//         ${checkboxes}
+//         <br>
+//       `;
+//     },
+//     choices: ['Submit'],
+//     button_html: '<button class="jspsych-btn" style="font-size:18px; margin-top:12px;" ' +
+//       'onclick="window._infoSelected = Array.from(document.querySelectorAll(\'input[type=checkbox]:checked\')).map(el => el.value)">%choice%</button>',
+//     on_finish: function(data) {
+//       var selected = new Set(window._infoSelected || []);
+//       data.selected = [...selected];
+//       data.correct = (
+//         [...correctAnswers].every(a => selected.has(a)) &&
+//         [...selected].every(a => correctAnswers.has(a))
+//       );
+//     }
+//   };
+// }
 
 var info_comprehension = makeInfoComprehension(condition);
 
@@ -537,12 +719,12 @@ var info_comprehension_loop = {
 var info_comprehension_confirmation = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function() {
-    var msg = `<p style="font-size:20px;">That's right! Tany people all speak English, but 20% speak Taneg.</p>`;
-    if (hasDrogek) {
-      msg += `<p style="font-size:20px;">Drogek, by contrast, is now barely spoken at all.</p>`;
-    }
-    else {
-      msg += `<p style="font-size:20px;">This is better than for some other minority languages, which are barely spoken at all.</p>`;
+    var msg;
+    if (threatened) {
+      msg = `<p style="font-size:20px;">That's right! Tany people all speak English, but only 20% speak Taneg regularly.</p>
+             <p style="font-size:20px;">Minority languages like this are often at risk of dying out.</p>`;
+    } else {
+      msg = `<p style="font-size:20px;">That's right! Taneg is a thriving language, widely spoken by the Tany people.</p>`;
     }
     msg += `<p style="font-size:20px;"><i>Press any key to continue.</i></p>`;
     return msg;
