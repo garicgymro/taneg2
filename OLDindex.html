@@ -1890,79 +1890,57 @@ timeline.push(followup_feedback_question);
 
 
 
-// Single source of truth for the completion code, used everywhere below.
-var PROLIFIC_COMPLETION_URL = "https://app.prolific.com/submissions/complete?cc=C10OJR3K";
-
-// Renders the final thank-you / redirect screen. Called either from
-// pavlovia_finish's on_finish (the "happy path") or from the fallback
-// timer below (the "the plugin never called back" path) — whichever
-// happens first. The finishedFlag guard makes sure only one of them
-// actually writes to the page.
-function showFinishScreen() {
-  if (window._pavloviaFinishHandled) return;
-  window._pavloviaFinishHandled = true;
-  if (window._pavloviaFallbackTimer) clearTimeout(window._pavloviaFallbackTimer);
-
-  document.body.innerHTML = `
-    <div style="max-width:700px; margin:80px auto; text-align:center;">
+  var FinalDebrief = {
+    type: jsPsychHtmlKeyboardResponse,
+    choices: "NO_KEYS",
+    stimulus: `
       <p style="font-size:20px;">Thank you for your participation!</p>
-      <p style="font-size:20px;">This experiment was designed to investigate motivation and engagement in the learning of minority languages.</p>
-      <p style="font-size:20px;">There is in fact no real language called Taneg, but it was closely based on existing minority languages.</p>
-      <p style="font-size:18px;">Please click below to return to Prolific:</p>
-      <a href="${PROLIFIC_COMPLETION_URL}">
-        Click here to return to Prolific
-      </a>
-    </div>
-  `;
-}
+    <p style="font-size:20px;">This experiment was designed to investigate motivation and engagement in the learning of minority languages.</p>
+  <p style="font-size:20px;">There is in fact no real language called Taneg, but it was closely based on existing minority languages.</p>
+      <p style="font-size:20px;">Please click below to return to Prolific:</p>
+    <a href="https://app.prolific.com/submissions/complete?cc=CURWMB01">
+      Click here to return to Prolific
+    </a>
+
+      `
+  };
+
 
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
-    on_load: function () {
-      // The jspsych-7-pavlovia plugin's on_finish callback only fires once
-      // Pavlovia's server acknowledges the data upload. In practice this
-      // acknowledgment sometimes never arrives (server-side error, dropped
-      // connection, timeout on a large payload) and on_finish then never
-      // runs — leaving the participant on a blank page with no completion
-      // screen and no code, even though nothing in our code "crashed".
-      //
-      // To guard against that, we show an immediate "please wait" message
-      // now, and start a fallback timer that will force the thank-you /
-      // redirect screen to appear even if the plugin's callback never
-      // fires. Whichever of {on_finish, fallback timer} runs first wins;
-      // showFinishScreen() ignores the second call.
-      window._pavloviaFinishHandled = false;
-
+    on_finish: function () {
+      // Official Pavlovia-documented pattern: show a "please wait" message,
+      // then redirect after a short delay. on_finish is a standard jsPsych
+      // trial callback (not plugin-version-specific), and per Pavlovia's docs
+      // it only fires after the server acknowledges the data upload.
       document.body.innerHTML = `
         <div style="max-width:700px; margin:80px auto; text-align:center;">
-          <p style="font-size:18px;">Please wait, your data is being saved...</p>
+          <p style="font-size:20px;">Thank you for your participation!</p>
+          <p style="font-size:20px;">This experiment was designed to investigate motivation and engagement in the learning of minority languages.</p>
+          <p style="font-size:20px;">There is in fact no real language called Taneg, but it was closely based on existing minority languages.</p>
+          <p style="font-size:18px;">Please wait. You will be redirected back to Prolific in a few moments.</p>
+          <p style="font-size:14px;">If you get a pop-up warning that data may not be saved, you can click "Leave" — your data has already been saved.</p>
         </div>
       `;
-
-      window._pavloviaFallbackTimer = setTimeout(function () {
-        showFinishScreen();
-      }, 12000);
-    },
-    on_finish: function () {
-      try {
-        showFinishScreen();
-      } catch (e) {
-        // Last-resort fallback if something in showFinishScreen itself
-        // throws (e.g. document.body unexpectedly missing) — participants
-        // should never be left looking at a totally blank page.
-        document.body.innerHTML =
-          '<div style="max-width:700px; margin:80px auto; text-align:center;">' +
-          '<p style="font-size:18px;">Please click below to return to Prolific:</p>' +
-          '<a href="' + PROLIFIC_COMPLETION_URL + '">Click here to return to Prolific</a>' +
-          '</div>';
-      }
+      setTimeout(function () {
+        location.href = "https://app.prolific.com/submissions/complete?cc=C10OJR3K";
+        document.body.innerHTML = `
+          <div style="max-width:700px; margin:80px auto; text-align:center;">
+            <p style="font-size:18px;">If you are not automatically redirected, please click here:</p>
+            <a href="https://app.prolific.com/submissions/complete?cc=C10OJR3K">
+              Click here to return to Prolific
+            </a>
+          </div>
+        `;
+      }, 5000);
     }
 };
 
 
 
 timeline.push(pavlovia_finish);
+timeline.push(FinalDebrief);
 
 
 
