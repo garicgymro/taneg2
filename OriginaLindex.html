@@ -58,16 +58,6 @@
 
   var condition = 'threatened'; //For finishing condition
 
-  // L1-interference follow-up manipulation (separate from `condition` above,
-  // which stays fixed at 'threatened' since this follow-up reuses that
-  // intro). Randomly assigned per participant:
-  //   'interspersed' — extra exposure trials show the English translation
-  //                    of a randomly-drawn stimulus from the same phase
-  //   'blank'        — extra exposure trials show only the image, no text
-  var l1_interference_condition = jsPsych.randomization.sampleWithoutReplacement(
-    ['interspersed', 'blank'], 1
-  )[0];
-
   var production_mode = 'wordbank'; // or 'typed' 
 
 
@@ -743,14 +733,13 @@ var info_comprehension_confirmation = {
 
 
 timeline.push(welcome, comprehension_loop1, info_confirmation, info_comprehension_loop, info_comprehension_confirmation);
-jsPsych.data.addProperties({ condition: condition, l1_interference_condition: l1_interference_condition });
+jsPsych.data.addProperties({ condition: condition });
 
 
 var participant_id = jsPsych.randomization.randomID(10);
 jsPsych.data.addProperties({
   participant_id: participant_id,
-  condition: condition,
-  l1_interference_condition: l1_interference_condition
+  condition: condition
 });
   var instructions = {
     type: jsPsychHtmlKeyboardResponse,
@@ -833,20 +822,20 @@ jsPsych.data.addProperties({
 var noun_phrase_stimuli = [
     // teban
     // { image: "img/BigSandwich.png",  word: "teban pir",  type: "noun phrase" },
-    { image: "img/SmallSandwich.png", word: "teban kas", type: "noun phrase", english: "small sandwich" },
-    { image: "img/GoodSandwich.png", word: "teban tan",  type: "noun phrase", english: "good sandwich" },
-    { image: "img/BadSandwich.png",  word: "teban turu", type: "noun phrase", english: "bad sandwich" },
+    { image: "img/SmallSandwich.png", word: "teban kas", type: "noun phrase" },
+    { image: "img/GoodSandwich.png", word: "teban tan",  type: "noun phrase" },
+    { image: "img/BadSandwich.png",  word: "teban turu", type: "noun phrase" },
     // pilg 
-    { image: "img/BigUmbrella.png",  word: "pilg bir",   type: "noun phrase", english: "big umbrella" },
+    { image: "img/BigUmbrella.png",  word: "pilg bir",   type: "noun phrase" },
     // { image: "img/SmallUmbrella.png", word: "pilg gas",  type: "noun phrase" },
-    { image: "img/GoodUmbrella.png", word: "pilg dan",   type: "noun phrase", english: "good umbrella" },
-    { image: "img/BadUmbrella.png",  word: "pilg duru",  type: "noun phrase", english: "bad umbrella" },
+    { image: "img/GoodUmbrella.png", word: "pilg dan",   type: "noun phrase" },
+    { image: "img/BadUmbrella.png",  word: "pilg duru",  type: "noun phrase" },
     // kiv 
-    { image: "img/BigMan.png",       word: "kiv pir",    type: "noun phrase", english: "big man" },
-    { image: "img/SmallMan.png",     word: "kiv kas",    type: "noun phrase", english: "small man" },
+    { image: "img/BigMan.png",       word: "kiv pir",    type: "noun phrase" },
+    { image: "img/SmallMan.png",     word: "kiv kas",    type: "noun phrase" },
     // kers 
-    { image: "img/BigWoman.png",     word: "kers bir",   type: "noun phrase", english: "big woman" },
-    { image: "img/SmallWoman.png",   word: "kers gas",   type: "noun phrase", english: "small woman" }
+    { image: "img/BigWoman.png",     word: "kers bir",   type: "noun phrase" },
+    { image: "img/SmallWoman.png",   word: "kers gas",   type: "noun phrase" }
   ];
 
   var numeral_stimuli = [
@@ -856,20 +845,20 @@ var noun_phrase_stimuli = [
 
 
   var two_noun_stimuli = [
-    { image: "img/GoodSandwich2.png",  word: "dew debanu", english: "two sandwiches" },
-    { image: "img/Umbrella2.png",  word: "dew bilgu", english: "two umbrellas" },
-    { image: "img/Man2.png", word: "dew givu", english: "two men" },
-    { image: "img/Woman2.png", word: "dew gersu", english: "two women" }
+    { image: "img/GoodSandwich2.png",  word: "dew debanu" },
+    { image: "img/Umbrella2.png",  word: "dew bilgu" },
+    { image: "img/Man2.png", word: "dew givu" },
+    { image: "img/Woman2.png", word: "dew gersu" }
     // { image: "img/Book2.png",  word: "dew bargu" },
     // { image: "img/GoodShoe2.png", word: "dew dobelu" },
   ];
 
 
   var four_noun_stimuli = [
-    { image: "img/GoodSandwich4.png",  word: "kra sebanu", english: "four sandwiches" },
-    { image: "img/GoodUmbrella4.png",  word: "kra filgu", english: "four umbrellas" },
-    { image: "img/Man4.png", word: "kra hivu", english: "four men" },
-    { image: "img/Woman4.png", word: "kra hersu", english: "four women" }
+    { image: "img/GoodSandwich4.png",  word: "kra sebanu" },
+    { image: "img/GoodUmbrella4.png",  word: "kra filgu" },
+    { image: "img/Man4.png", word: "kra hivu" },
+    { image: "img/Woman4.png", word: "kra hersu" }
     // { image: "img/Book4.png",  word: "kra fargu" },
     // { image: "img/GoodShoe4.png", word: "kra sobelu" },
   ];
@@ -902,12 +891,12 @@ var noun_phrase_stimuli = [
 
 var two_adjective_stimuli = [
     // { image: "img/BigSandwich2.png",  word: "dew debanu pir", type: "number phrase", numericClass: "two" },
-    { image: "img/SmallSandwich2.png", word: "dew debanu kas", type: "number phrase", numericClass: "two", english: "two small sandwiches" },
-    { image: "img/BigUmbrella2.png",  word: "dew bilgu pir", type: "number phrase", numericClass: "two", english: "two big umbrellas" },
+    { image: "img/SmallSandwich2.png", word: "dew debanu kas", type: "number phrase", numericClass: "two" },
+    { image: "img/BigUmbrella2.png",  word: "dew bilgu pir", type: "number phrase", numericClass: "two" },
     // { image: "img/SmallUmbrella2.png", word: "dew bilgu kas", type: "number phrase", numericClass: "two" },
     // { image: "img/GoodUmbrella2.png", word: "dew bilgu tan", type: "number phrase", numericClass: "two" },
-    { image: "img/BadUmbrella2.png", word: "dew bilgu turu", type: "number phrase", numericClass: "two", english: "two bad umbrellas" },
-    { image: "img/GoodSandwich2.png", word: "dew debanu tan", type: "number phrase", numericClass: "two", english: "two good sandwiches" },
+    { image: "img/BadUmbrella2.png", word: "dew bilgu turu", type: "number phrase", numericClass: "two" },
+    { image: "img/GoodSandwich2.png", word: "dew debanu tan", type: "number phrase", numericClass: "two" },
     // { image: "img/BadSandwich2.png", word: "dew debanu turu", type: "number phrase", numericClass: "two" }
     // { image: "img/BigBook2.png",  word: "dew bargu pir", type: "number phrase" },
     // { image: "img/SmallBook2.png", word: "dew bargu kas", type: "number phrase" },
@@ -920,14 +909,14 @@ var two_adjective_stimuli = [
   ];
 
 var four_adjective_stimuli = [
-    { image: "img/BigSandwich4.png",  word: "kra sebanu pir", type: "number phrase", numericClass: "four", english: "four big sandwiches" },
+    { image: "img/BigSandwich4.png",  word: "kra sebanu pir", type: "number phrase", numericClass: "four" },
     // { image: "img/SmallSandwich4.png", word: "kra sebanu kas", type: "number phrase", numericClass: "four" },
     // { image: "img/BigUmbrella4.png",  word: "kra filgu pir", type: "number phrase", numericClass: "four" },
-    { image: "img/SmallUmbrella4.png", word: "kra filgu kas", type: "number phrase", numericClass: "four", english: "four small umbrellas" },
-    { image: "img/GoodUmbrella4.png", word: "kra filgu tan", type: "number phrase", numericClass: "four", english: "four good umbrellas" },
+    { image: "img/SmallUmbrella4.png", word: "kra filgu kas", type: "number phrase", numericClass: "four" },
+    { image: "img/GoodUmbrella4.png", word: "kra filgu tan", type: "number phrase", numericClass: "four" },
     // { image: "img/BadUmbrella4.png", word: "kra filgu turu", type: "number phrase", numericClass: "four" },
     // { image: "img/GoodSandwich4.png", word: "kra sebanu tan", type: "number phrase", numericClass: "four" },
-    { image: "img/BadSandwich4.png", word: "kra sebanu turu", type: "number phrase", numericClass: "four", english: "four bad sandwiches" }
+    { image: "img/BadSandwich4.png", word: "kra sebanu turu", type: "number phrase", numericClass: "four" }
     // { image: "img/BigBook4.png",  word: "kra fargu pir", type: "number phrase" },
     // { image: "img/SmallBook4.png", word: "kra fargu kas", type: "number phrase" },
     // { image: "img/GoodBook4.png", word: "kra fargu tan", type: "number phrase" },
@@ -1092,16 +1081,25 @@ var all_production_words = [...new Set(
 
 
 
-// Shared keyboard-gating logic for any image trial that should ignore
-// spacebar presses for the first 3s and then wait for a spacebar press to
-// advance (up to the 6s trial_duration). Factored out of the original
-// `exposure` trial's on_start/on_finish so the same behavior can be reused
-// by the L1-interference trials below without duplicating it.
-function gatedTrialOnStart(trial) {
-  trial._allow_listener_timeout = setTimeout(function() {
-    var listener_registered_at = performance.now();
+var exposure = {
+  type: jsPsychImageKeyboardResponse,
+  data: { task: 'exposure' },
+  stimulus: jsPsych.timelineVariable('image'),
+  stimulus_width: 400,
+  maintain_aspect_ratio: true,
+  prompt: function(){
+    return `<p style="font-size:30px;">${jsPsych.timelineVariable('word')}</p>`;
+  },
+  choices: "NO_KEYS",
+  response_ends_trial: false,
+  trial_duration: 6000,
+  post_trial_gap: 500,
 
-    trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
+  on_start: function(trial) {
+    trial._allow_listener_timeout = setTimeout(function() {
+      var listener_registered_at = performance.now();
+
+trial._kb_listener = jsPsych.pluginAPI.getKeyboardResponse({
       callback_function: function(info) {
         var press_time = performance.now();
         // Ignore if the press arrived before the listener opened
@@ -1123,115 +1121,16 @@ function gatedTrialOnStart(trial) {
       persist: false
     });
   }, 3000);
-}
+},
 
-function gatedTrialOnFinish(data) {
-  if (data.rt !== null && data.rt !== undefined) {
-    data.rt_valid = data.rt >= 3000;
-  } else {
-    data.rt_valid = false;
+  on_finish: function(data) {
+    if (data.rt !== null && data.rt !== undefined) {
+      data.rt_valid = data.rt >= 3000;
+    } else {
+      data.rt_valid = false;
+    }
   }
-}
-
-var exposure = {
-  type: jsPsychImageKeyboardResponse,
-  data: { task: 'exposure' },
-  stimulus: jsPsych.timelineVariable('image'),
-  stimulus_width: 400,
-  maintain_aspect_ratio: true,
-  prompt: function(){
-    return `<p style="font-size:30px;">${jsPsych.timelineVariable('word')}</p>`;
-  },
-  choices: "NO_KEYS",
-  response_ends_trial: false,
-  trial_duration: 6000,
-  post_trial_gap: 500,
-
-  on_start: gatedTrialOnStart,
-  on_finish: gatedTrialOnFinish
 };
-
-
-// -----------------
-// L1-interference follow-up: trial + block factories
-// -----------------
-// makeExposureTrial builds a single ordinary exposure trial with concrete
-// (non-timeline-variable) stimulus/prompt values. Used instead of the
-// timeline_variables mechanism for the four phrase-level exposure blocks
-// below, because those blocks need extra L1-interference trials manually
-// interleaved into a shuffled trial list rather than auto-generated from a
-// timeline_variables array.
-function makeExposureTrial(image, word) {
-  return {
-    type: jsPsychImageKeyboardResponse,
-    data: { task: 'exposure' },
-    stimulus: image,
-    stimulus_width: 400,
-    maintain_aspect_ratio: true,
-    prompt: `<p style="font-size:30px;">${word}</p>`,
-    choices: "NO_KEYS",
-    response_ends_trial: false,
-    trial_duration: 6000,
-    post_trial_gap: 500,
-    on_start: gatedTrialOnStart,
-    on_finish: gatedTrialOnFinish
-  };
-}
-
-// makeInterferenceTrial builds one of the extra L1-interference trials.
-// Mirrors the exposure trial's layout exactly (same image size/position,
-// same timing/keyboard behavior) — the only difference is the prompt text:
-//   'interspersed' -> shows the English translation of the source item
-//   'blank'        -> shows no text at all, image only
-function makeInterferenceTrial(image, interferenceCondition, englishText, phaseLabel, sourceWord) {
-  var promptHtml = (interferenceCondition === 'interspersed')
-    ? `<p style="font-size:30px;">${englishText}</p>`
-    : '';
-  return {
-    type: jsPsychImageKeyboardResponse,
-    data: {
-      task: 'exposure',
-      trial_kind: 'l1_interference',
-      interference_condition: interferenceCondition,
-      exposure_phase: phaseLabel,
-      source_word: sourceWord
-    },
-    stimulus: image,
-    stimulus_width: 400,
-    maintain_aspect_ratio: true,
-    prompt: promptHtml,
-    choices: "NO_KEYS",
-    response_ends_trial: false,
-    trial_duration: 6000,
-    post_trial_gap: 500,
-    on_start: gatedTrialOnStart,
-    on_finish: gatedTrialOnFinish
-  };
-}
-
-// buildInterleavedExposureBlock builds a block equivalent to
-// { timeline: [exposure], timeline_variables: pool, randomize_order: true },
-// but with floor(pool.length * interferenceRate) extra L1-interference
-// trials shuffled in. Extra trials are drawn without replacement from the
-// same pool (per the design: "a random stimulus from the same pool ...
-// with no repeats" — no repeats among the extra trials within this phase).
-function buildInterleavedExposureBlock(pool, phaseLabel, interferenceRate) {
-  if (interferenceRate === undefined) interferenceRate = 0.5;
-
-  var mainTrials = pool.map(function(item) {
-    return makeExposureTrial(item.image, item.word);
-  });
-
-  var numExtra = Math.floor(pool.length * interferenceRate);
-  var extraSourceItems = jsPsych.randomization.sampleWithoutReplacement(pool, numExtra);
-  var extraTrials = extraSourceItems.map(function(item) {
-    return makeInterferenceTrial(
-      item.image, l1_interference_condition, item.english, phaseLabel, item.word
-    );
-  });
-
-  return { timeline: jsPsych.randomization.shuffle(mainTrials.concat(extraTrials)) };
-}
 
 
 
@@ -1409,17 +1308,12 @@ var adjective_exposure_instructions = {
 
 var noun_phrase_exposure_instructions = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: function() {
-      var note = (l1_interference_condition === 'interspersed')
-        ? `<p style="font-size:24px;">Note that you'll also see some images with accompanying phrases in English rather than Taneg .</p>`
-        : `<p style="font-size:24px;">Note that you'll also see some images with no accompanying phrase at all.</p>`;
-      return `
+    stimulus: `
       <p style="font-size:24px;">Now let's put words together...</p>
-${note}
-
       <p style="font-size:22px;"><i>Press any key when you're ready.</i></p>
-    `;
-    },
+
+
+    `,
     post_trial_gap: 1000
   };
 
@@ -1448,16 +1342,12 @@ var adjective_exposure_block = {
 
 
 
-// The four multi-word exposure phases below get L1-interference trials
-// interleaved at a 50% rate (floor(pool.length / 2) extra trials each, per
-// buildInterleavedExposureBlock). These are the phases where the Taneg
-// target is genuinely multi-word (noun+adjective, or numeral+noun[+adjective]),
-// which is where L1 interference during phrase-level exposure is the thing
-// being tested. The single-word noun/adjective/numeral exposure blocks
-// above are left untouched.
-var noun_phrase_exposure_block = buildInterleavedExposureBlock(
-  noun_phrase_stimuli, 'noun_phrase'
-);
+var noun_phrase_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: noun_phrase_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
 
 
 var numeral_exposure_block = {
@@ -1468,21 +1358,30 @@ var numeral_exposure_block = {
   };
 
 
-var two_exposure_block = buildInterleavedExposureBlock(
-  two_noun_stimuli, 'two_noun'
-);
+var two_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: two_noun_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
 
 
-var four_exposure_block = buildInterleavedExposureBlock(
-  four_noun_stimuli, 'four_noun'
-);
+var four_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: four_noun_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
 
 
 
 
-var number_noun_phrase_exposure_block = buildInterleavedExposureBlock(
-  number_stimuli, 'number_noun_phrase'
-);
+var number_noun_phrase_exposure_block = {
+    timeline: [exposure],
+    timeline_variables: number_stimuli,
+    randomize_order: true,
+    repetitions: 1
+  };
 
 
 
