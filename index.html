@@ -64,9 +64,11 @@
   //   'interspersed' — extra exposure trials show the English translation
   //                    of a randomly-drawn stimulus from the same phase
   //   'blank'        — extra exposure trials show only the image, no text
-  var l1_interference_condition = jsPsych.randomization.sampleWithoutReplacement(
-    ['interspersed', 'blank'], 1
-  )[0];
+  // var l1_interference_condition = jsPsych.randomization.sampleWithoutReplacement(
+  //   ['interspersed', 'blank'], 1
+  // )[0];
+
+  var l1_interference_condition = 'blank';
 
   var production_mode = 'wordbank'; // or 'typed' 
 
